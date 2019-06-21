@@ -1,0 +1,28 @@
+{
+  "name": "hackerday2019",
+  "version": "1.0.0",
+  "description": "Sitio web hackerday 2019",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosmart7104/hackerday2019.git"
+  },
+  "keywords": [
+    "hackerday",
+    "2019",
+    "hacker",
+    "event"
+  ],
+  "author": "Carlos Martínez <carlosmart7104@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosmart7104/hackerday2019/issues"
+  },
+  "homepage": "https://github.com/carlosmart7104/hackerday2019#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
