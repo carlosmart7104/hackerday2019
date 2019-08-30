@@ -58,9 +58,15 @@ body {
     margin-top: 5px;
 }
 
+.active {
+  display: block;
+}
+
 /*banner principal*/
 
 .logobanner {
 	width: 150px;
 	max-width: 50%;
+    display:block;
+    margin:auto;
 }
