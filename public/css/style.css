@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: 'Roboto';
+  min-height: 100vh;
+  background: -moz-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
+  background: linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090a31",endColorstr="#e80074",GradientType=1);
+}
+
+/*menu bar*/
+
+.navbar {
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+.main-nav {
+    list-style-type: none;
+}
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+.logoimg {
+    display: inline-block;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.menubar {
+	width: 30px;
+    margin-top: 5px;
+}
+
+/*banner principal*/
+
+.logobanner {
+	width: 150px;
+	max-width: 50%;
+}
