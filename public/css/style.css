@@ -17,7 +17,6 @@ body {
 
 .navbar {
     font-size: 18px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
 }
 .main-nav {
@@ -34,6 +33,13 @@ body {
 }
 .logoimg {
     display: inline-block;
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.logoletras {
+    display: none;
     width: 50px;
     margin-top: 10px;
     margin-left: 20px;
@@ -62,6 +68,7 @@ body {
   display: block;
 }
 
+
 /*banner principal*/
 
 .logobanner {
@@ -69,4 +76,222 @@ body {
 	max-width: 50%;
     display:block;
     margin:auto;
+    margin-top: 20px;
 }
+
+h1 {
+    display: flex;
+    margin-top: 10PX;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+h4 {
+    display: flex;
+    margin-top: 10PX;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+h4.fecha {
+    color: #26F4FF;
+}
+
+/* Global Button Styles */
+
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    border-radius: 0;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+    color: #FFF;
+    text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+    height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+    position: relative;
+    display: block;
+    margin: 30px auto 0;
+    padding: 14px 15px;
+    color: #fff;
+    font-size:14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* BOTON PRIMARIO*/
+
+.col-md-3 {
+  /* IMPORTANTE */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+a.animated-button.thar-one {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid rgba(232, 0, 116, 0.85);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 15px;
+}
+
+a.animated-button.thar-one:hover {
+    color: #FFFFFF !important;
+    background-color: transparent;
+    text-shadow: none;
+}
+a.animated-button.thar-one:hover:before {
+    position: absolute;
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-one:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: rgba(232, 0, 116, 0.85);
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.linesgrd {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+
+.imglinesgrd {
+    display: block;
+}
+
+.imglinesgrdsmall {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*FOR DESKTOP*/
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logoimg {
+    display: none;
+    }
+
+    .logoletras {
+    display: inline-block;
+    width: 180px;
+    margin-top: 5px;
+    margin-left: 30px;
+    }
+
+   .navbar-toggle {
+       display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .logobanner {
+    width: 250px;
+    max-width: 50%;
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+    }
+
+    .linesgrd {
+      display: flex;
+      justify-content: flex-end;
+      max-width: 100%;
+    }
+
+    .imglinesgrd {
+        display: inline-block;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .imglinesgrdsmall {
+        display: block;
+    }
