@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', 'IBM Plex Sans';
   min-height: 100vh;
   background: -moz-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
@@ -97,8 +97,19 @@ h4 {
     text-transform: uppercase;
 }
 
+h4.institutodesktop {
+    line-height: 30%;
+    display: none;
+}
+
 h4.fecha {
+    font-family: 'Roboto';
     color: #26F4FF;
+    letter-spacing: 0.105em;
+}
+
+.lugaryfecha {
+    margin-top: 0px;
 }
 
 /* Global Button Styles */
@@ -222,18 +233,72 @@ a.animated-button.thar-one:before {
 
 
 .imglinesgrd {
-    display: block;
+    display: none;
 }
 
 .imglinesgrdsmall {
     display: inline-block;
     display: flex;
     justify-content: flex-end;
+    margin-top: 0px;
 }
 
 
 /*FOR DESKTOP*/
 @media screen and (min-width: 768px) {
+
+    h1.ver {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 45px;
+
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.105em;
+        color: #FFFFFF;
+        }
+
+    h4 {
+        display: flex;
+        margin-top: 10PX;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 0.120em;
+    }
+
+    h4.hora {
+        font-size: 135%;
+    }
+    h4.fecha {
+        font-size: 135%;
+        line-height: 200%;
+    }
+
+    h4.institutodesktop {
+        display: inline-block;
+        line-height: 80%;
+        display: flex;
+        margin-top: 10PX;
+        justify-content: center;
+        text-align: center;
+        font-size: 135%;
+    }
+
+
+    h4.instituto{
+        display: none;
+    }
+
+    h4.ver2 {
+        display: none;
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -252,6 +317,8 @@ a.animated-button.thar-one:before {
     }
     .nav-links {
         margin-left: 40px;
+        pointer-events: none;
+        cursor: default;
     }
     .logoimg {
     display: none;
@@ -277,7 +344,6 @@ a.animated-button.thar-one:before {
     max-width: 50%;
     display:block;
     margin:auto;
-    margin-top: 20px;
     }
 
     .linesgrd {
@@ -287,9 +353,11 @@ a.animated-button.thar-one:before {
     }
 
     .imglinesgrd {
-        width: 1300px;    
+        min-width: 1024px;
+        margin-top: -80px; 
         display: inline-block;
         display: flex;
+        z-index: -10;
         justify-content: flex-end;
     }
 
