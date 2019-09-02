@@ -287,11 +287,12 @@ a.animated-button.thar-one:before {
     }
 
     .imglinesgrd {
+        width: 1300px;    
         display: inline-block;
         display: flex;
         justify-content: flex-end;
     }
 
     .imglinesgrdsmall {
-        display: block;
+        display: none;
     }
