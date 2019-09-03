@@ -8,22 +8,23 @@
   	<title>HackerDay 2019</title>
 </head>
 <body>
-	<nav class="navbar">
-	  <span class="navbar-toggle" id="js-navbar-toggle">
+	<nav id="myNav" class="navbar">
+	  <span class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
         <img src="img/menubar.svg" class="menubar">
       </span>
 	  <a href="#" class="logo">
 	  	<img src="img/hdbg.png" class="logoimg">
 	  	<img src="img/hackletras.svg" class="logoletras">
 	  </a>
-        <ul class="main-nav" id="js-menu">
-            <li><a href="#" class="nav-links">Conferencias</a></li>
-            <li><a href="#" class="nav-links">Talleres</a></li>
-            <li><a href="#" class="nav-links">Concurso</a></li>
-            <li><a href="#" class="nav-links">Aliados</a></li>
-            <li><a href="#" class="nav-links">Ubicación</a></li>
-            <li><a href="#" class="nav-links">Nosotros</a></li>
-        </ul>     
+      <ul class="overlay main-nav" id="js-menu">
+      	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li><a href="#" class="nav-links">Conferencias</a></li>
+        <li><a href="#" class="nav-links">Talleres</a></li>
+        <li><a href="#" class="nav-links">Concurso</a></li>
+        <li><a href="#" class="nav-links">Aliados</a></li>
+        <li><a href="#" class="nav-links">Ubicación</a></li>
+        <li><a href="#" class="nav-links">Nosotros</a></li>
+      </ul>     
 	</nav>
 	<div class="banner">
 		<span class="banner-toggle" id="js-banner-toggle">
