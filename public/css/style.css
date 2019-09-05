@@ -137,6 +137,7 @@ h1 {
 
 h1.contact {
     padding: 1em;
+    color: #26F4FF;
 }
 
 h4 {
@@ -319,7 +320,8 @@ footer {
     display: flex;
     flex-flow: column wrap;
     align-content: stretch;
-}
+
+    }
 
 .footer,
 .fa-stack i a {
@@ -329,10 +331,57 @@ footer {
     margin-left: 0.5em;
 }
 
+.lateralizq {
+    display: flex;
+    flex-flow: column-wrap;
+    /*border: red 5px solid;*/
+}
+
+.hackdaymx {
+    margin-top: 50px;
+    margin-left: -43px;
+}
+
+.envelope {
+    margin-top: 100px;
+    margin-left: -43px;
+}
+
+.lateralder {
+    display: flex;
+    flex-flow: column-wrap;
+    margin-top: 0px;
+    /*border: red 5px solid;*/
+}
+
+.gitcarlos {
+    margin-top: 50px;
+    margin-left: -43px;
+}
+
 .iconname {
     margin-left: 50px;
     color: white;
 }
+
+/*.fa-lg {
+     border: red 5px solid;
+}*/
+
+.foot {
+    display: flex;
+    flex-flow: column-wrap;
+    align-content: center;
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+.foot i {
+    padding: 1em;
+}
+
 
 .fa-lg i a {
     align-content: center;
@@ -345,6 +394,7 @@ footer {
     color: white;
     text-align: center;
     width: 100%;
+    padding-top: 2em;
 }
 
 
@@ -476,4 +526,150 @@ footer {
     .imglinesgrdsmall {
         display: none;
     }
+
+
+
+    /*FOOTER*/
+    .footer {
+        align-content: stretch;
+        
+    }
+
+   h1.contact {
+        padding: 1em;
+    }
+
+    span.envelope a {
+        align-items: right;
+        
+    }
+
+    .hackdaymx a {
+        align-items: right;
+        
+    }
+
+    .footer,
+    .fa-stack i a {
+        display: flex;
+        flex-flow: column-wrap;
+        margin-left: 2em;
+        margin-right: 2em;
+        /*border: red 5px solid;*/
+    }
+
+    .footer {
+        align-content: center;
+        max-width: 100%;
+    }
+
+    .iconname {
+        margin-left: 50px;
+        color: white;
+    }
+
+    .foot {
+        display: flex;
+        flex-flow: column-wrap;
+        align-content: center;
+        font-family: 'Roboto';
+        text-align: center;
+        font-size: 20px;
+        padding: 1em;
+    }
+
+    .fa-lg i a {
+        align-content: center;
+        font-family: 'Roboto';
+        text-align: center;
+        width: 100%;
+    }
+
+    .fechafooter {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+
+
+.lateralder {
+    display: inline-block;
+    margin-top: 0px;
 }
+
+.gitcarlos,
+.carlosname {
+    margin-top: 30px;
+    margin-left: 260px;
+    justify-content: space-between;
+}
+
+.gitvalvich,
+.valvichname {
+    margin-top: 30px;
+}
+
+.carlosname {
+    margin-left: 50px;
+}
+
+.gitcarlos,
+.carlosname {    
+    margin-bottom:0px;
+}
+
+.lateralizq {
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.hackdaymx,
+.hackmxname {
+    margin-top: 0px;
+    margin-left: 600px;
+    justify-content: space-between;
+
+}
+
+.hackmxname {
+    margin-left: 50px;
+}
+
+.hackdaymx,
+.hackmxname {
+   margin-bottom: 0px;
+   /*border: red 5px solid;*/
+}
+
+.envelope,
+.envelopename {
+    margin-top: -45px;
+    margin-left: -420px;
+    justify-content: space-between;
+}
+
+.envelopename {
+    margin-left: 50px;
+}
+
+.envelope,
+.envelopename {
+    margin-bottom: -50px;
+}
+
+.hackday,
+.hackname{
+    margin-left: -70px;
+   /* border: red 5px solid;*/
+}
+
+.hackname {
+    margin-left: 50px;
+}
+
+
+
+}
+
+
+
