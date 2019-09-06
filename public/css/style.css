@@ -53,12 +53,12 @@ body {
 }
 
 /* Position the close button (top right corner) */
-.overlay .closebtn {
+/*.overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
+}*/
 
 
 
@@ -594,20 +594,16 @@ footer {
 
 .lateralder {
     display: inline-block;
-    margin-top: 0px;
+    margin-top: 0px;    
 }
 
 .gitcarlos,
 .carlosname {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 260px;
     justify-content: space-between;
 }
 
-.gitvalvich,
-.valvichname {
-    margin-top: 30px;
-}
 
 .carlosname {
     margin-left: 50px;
@@ -618,7 +614,19 @@ footer {
     margin-bottom:0px;
 }
 
-.lateralizq {
+.gitvalvich,
+.valvichname {
+    margin-top: 50px;
+    margin-left: -150px;
+    /*border: red 5px solid;*/
+}
+
+.valvichname {
+    margin-left: 50px;
+}
+
+
+.lateralizq i a {
     display: inline-block;
     margin-top: 0px;
 }
@@ -626,7 +634,7 @@ footer {
 .hackdaymx,
 .hackmxname {
     margin-top: 0px;
-    margin-left: 600px;
+    margin-left: 0px;
     justify-content: space-between;
 
 }
@@ -637,15 +645,16 @@ footer {
 
 .hackdaymx,
 .hackmxname {
-   margin-bottom: 0px;
+   margin-bottom: -55px;
    /*border: red 5px solid;*/
 }
 
 .envelope,
 .envelopename {
-    margin-top: -45px;
-    margin-left: -420px;
-    justify-content: space-between;
+    margin-top: 0px;
+    margin-left: -410px;
+    margin-right: 50px;
+    margin-bottom: -100px; 
 }
 
 .envelopename {
@@ -654,17 +663,23 @@ footer {
 
 .envelope,
 .envelopename {
-    margin-bottom: -50px;
+    margin-bottom: -175px;
 }
 
 .hackday,
 .hackname{
-    margin-left: -70px;
+    margin-left: -290px;
+    margin-right: 600px;
    /* border: red 5px solid;*/
 }
 
 .hackname {
     margin-left: 50px;
+}
+
+.hackday,
+.hackname {
+    margin-bottom: -60px;
 }
 
 
