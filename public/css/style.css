@@ -718,26 +718,30 @@ h1.confname {
 }
 
 .conf-desktop {
-    border: 5px solid rgba(232, 0, 116, 0.85);
+    border: 3px solid #26F4FF;
+    box-sizing: border-box;
+    border-radius: 18px;
     margin: 0 auto;
     align-items: center;
     border-radius: 20px;
-    padding: 1em;
-    margin-top: 30px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .confrect1 {
-    margin-left: 80px;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(232, 0, 116, 0.85);
     
 }
 .confrect2 {
     display: inline-block;
+    border: 5px solid rgba(232, 0, 116, 0.85);
    
 }
 .confrect3 {
     display: inline-block;
+    border: 5px solid rgba(232, 0, 116, 0.85);
     
 }
 
