@@ -235,6 +235,8 @@ a.animated-button.thar-one:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
+/*LINEAS GRADIENTES*/
+
 .linesgrd {
   display: flex;
   justify-content: flex-end;
@@ -289,6 +291,7 @@ footer {
 .lateralizq {
     display: flex;
     flex-flow: column-wrap;
+    margin-left: 20px;
     /*border: red 5px solid;*/
 }
 
@@ -306,6 +309,7 @@ footer {
     display: flex;
     flex-flow: column-wrap;
     margin-top: 0px;
+    margin-left: 20px;
     /*border: red 5px solid;*/
 }
 
@@ -317,6 +321,8 @@ footer {
 .iconname {
     margin-left: 50px;
     color: white;
+    font-size: 18px
+    display: inline-block;
 }
 
 a.envelopename {
@@ -408,6 +414,108 @@ h1.confname {
     color: black;
 }
 
+/*TALLERES*/
+
+
+h1.talleres {
+    color: #26F4FF;
+    padding: 1em;
+}
+
+table {
+    border: solid 5px #26F4FF;
+    text-align: center;
+    color: white;
+}
+
+.talleres-mobile {
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+td.datavis {
+    padding: 8px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;
+    
+}
+
+td.deschor {
+    padding: 20px;
+    border-collapse: collapse;
+    
+}
+
+td.iconotall {
+    border-right: 5px solid #26F4FF;
+    border-collapse: collapse;
+}
+
+p.tallhorario {
+    color: #E0274D;
+}
+
+/*BOTON TALLER*/
+.col-3 {
+  /* IMPORTANTE */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+a.animated-button.thar-two {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid #E0274D;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 50%;
+    border-radius: 12px;
+}
+
+a.animated-button.thar-two:hover {
+    color: #FFFFFF !important;
+    background-color: transparent;
+    text-shadow: none;
+}
+a.animated-button.thar-two:hover:before {
+    position: absolute;
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-two:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #E0274D;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.imgdatamobile {
+    display: inline-block;
+    width: 70px;
+}
+
+.talleres-desktop{
+    display: none;
+}
 
 
 
@@ -493,7 +601,7 @@ h1.confname {
     }
     .nav-links {
         margin-left: 40px;
-        pointer-events: none;
+        /*pointer-events: none;*/
         cursor: default;
     }
     .logoimg {
@@ -750,7 +858,48 @@ h1.confname {
     font-size: 20px;
     margin-left: 20px;
     margin-right: 20px;
+}
 
+
+/*TALLERES-DESKTOP*/
+
+.talleres-mobile {
+    display: none;
+}
+
+table {
+    border: solid 5px #26F4FF;
+    text-align: center;
+    color: white;
+}
+
+.talleres-desktop {
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+td.datavis {
+    padding: 8px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;
+    
+}
+
+td.deschor {
+    padding: 20px;
+    border-collapse: collapse;
+    
+}
+
+td.iconotall {
+    border-right: 5px solid #26F4FF;
+    border-collapse: collapse;
+}
+
+p.tallhorario {
+    color: #E0274D;
 }
 
 
