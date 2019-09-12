@@ -265,6 +265,10 @@ text-decoration:none;
 
 
 /*FOOTER*/
+.footer_desktop {
+    display: none;
+}
+
 footer {
    /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
@@ -276,14 +280,14 @@ footer {
   color: white;
 }
 
-.footer {
+.footer_mobile {
     display: flex;
     flex-flow: column wrap;
     align-content: stretch;
 
     }
 
-.footer i a {
+.footer_mobile i a {
     display: flex;
     flex-flow: column wrap;
 }
@@ -291,7 +295,7 @@ footer {
 .lateralizq {
     display: flex;
     flex-flow: column-wrap;
-    margin-left: 20px;
+    margin-left: 5px;
     /*border: red 5px solid;*/
 }
 
@@ -309,7 +313,7 @@ footer {
     display: flex;
     flex-flow: column-wrap;
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 5px;
     /*border: red 5px solid;*/
 }
 
@@ -652,156 +656,105 @@ a.animated-button.thar-two:before {
 
 
     /*FOOTER*/
-    .footer {
-        align-content: stretch;
+    .footer_mobile {
+        display: none;
         
     }
 
    h1.contact {
         padding: 1em;
+        margin-top: 10px;
     }
 
-    span.envelope a {
-        align-items: right;
-        
+    .footer_desktop {
+        display: inline;
     }
 
-    .hackdaymx a {
-        align-items: right;
-        
-    }
-
-    .footer i a {
+    .lateralizqdesk {
+        display: inline;
         display: flex;
-        flex-flow: column-wrap;
-        margin-left: 2em;
-        margin-right: 2em;
-        /*border: red 5px solid;*/
+        justify-content: center;
+        align-items: center;
+        /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .footer {
-        align-content: center;
-        max-width: 100%;
+    .hackday {
+        margin-right: 5px;
+        display: inline-block;
+        /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .iconname {
-        margin-left: 50px;
-        color: white;
+    .hackname {
+        display: inline-block;
+        display: contents;
+        justify-content: left;
+        align-items: left;
     }
 
-    .foot {
+    .hackerdaymx {
+        margin-right: 5px;
+        display: inline-block;
+        /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+    }
+    .hackmxname {
+        display: inline-block;
+        display: contents;
+        justify-content: left;
+        align-items: left;
+    }
+
+
+    .envelope {
+        display: inline-block;
+        margin-top: 0px;
+        margin-left: 0px;
+        /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+    }
+
+    .envelopename {
+        display: inline-block;
+        display: contents;
+        justify-content: left;
+        align-items: left;
+    }
+
+
+    .lateralderdesk {
+        margin: 0 auto;
+        display: inline;
         display: flex;
-        flex-flow: column-wrap;
-        align-content: center;
-        font-family: 'Roboto';
-        text-align: center;
-        font-size: 20px;
-        padding: 1em;
+        justify-content: center;
+        align-items: center;
+        /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    span i a {
-        align-content: center;
-        font-family: 'Roboto';
-        text-align: center;
-        width: 100%;
+    .gitvalvich {
+        display: inline-block;
+        /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .fechafooter {
-        color: white;
-        text-align: center;
-        width: 100%;
+    .valvichname {
+        display: inline-block;
+        display: contents;
+        justify-content: left;
+        align-items: left;
     }
 
+    .gitcarlos {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 0px;
+        /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+    }
 
-.lateralder {
-    display: inline-block;
-    margin-top: 0px;    
-}
+    .carlosname {
+        display: inline-block;
+        display: contents;
+        justify-content: left;
+        align-items: left;
+    }
 
-.gitcarlos,
-.carlosname {
-    margin-top: 50px;
-    margin-left: 260px;
-    justify-content: space-between;
-}
-
-
-.carlosname {
-    margin-left: 50px;
-}
-
-.gitcarlos,
-.carlosname {    
-    margin-bottom:0px;
-}
-
-.gitvalvich,
-.valvichname {
-    margin-top: 50px;
-    margin-left: -150px;
-    /*border: red 5px solid;*/
-}
-
-.valvichname {
-    margin-left: 50px;
-}
-
-
-.lateralizq i a {
-    display: inline-block;
-    margin-top: 0px;
-}
-
-.hackdaymx,
-.hackmxname {
-    margin-top: 0px;
-    margin-left: 0px;
-    justify-content: space-between;
-
-}
-
-.hackmxname {
-    margin-left: 50px;
-}
-
-.hackdaymx,
-.hackmxname {
-   margin-bottom: -55px;
-   /*border: red 5px solid;*/
-}
-
-.envelope,
-.envelopename {
-    margin-top: 0px;
-    margin-left: -410px;
-    margin-right: 50px;
-    margin-bottom: -100px; 
-}
-
-.envelopename {
-    margin-left: 50px;
-}
-
-.envelope,
-.envelopename {
-    margin-bottom: -175px;
-}
-
-.hackday,
-.hackname{
-    margin-left: -290px;
-    margin-right: 600px;
-   /* border: red 5px solid;*/
-}
-
-.hackname {
-    margin-left: 50px;
-}
-
-.hackday,
-.hackname {
-    margin-bottom: -60px;
-}
+    
 
 /*CONFERENCIAS*/
 
@@ -832,13 +785,14 @@ a.animated-button.thar-two:before {
     margin: 0 auto;
     align-items: center;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 65px;
     text-align: center;
 }
 
 .confrect1 {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
+    margin-top: 50px;
     
 }
 .confrect2 {
@@ -863,20 +817,54 @@ a.animated-button.thar-two:before {
 
 /*TALLERES-DESKTOP*/
 
+h1.talleres {
+    padding: 2em;
+}
+
 .talleres-mobile {
     display: none;
 }
 
-table {
-    border: solid 5px #26F4FF;
-    text-align: center;
-    color: white;
+.buttontaller {
+    display: none;
 }
 
 .talleres-desktop {
-    border-radius: 20px;
+    display: inline;
     margin: 0 auto;
-    width: 100%;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+}
+
+.taller-desktop1 {
+    margin-top: 20px;
+    border: solid 5px #26F4FF;
+    text-align: center;
+    align-items: left;
+    color: white;
+}
+
+.taller-desktop1 {
+    border-radius: 20px;
+    width: 50%;
+
+}
+
+.taller-desktop2 {
+    border: solid 5px #26F4FF;
+    text-align: center;
+    align-items: right;
+    color: white;
+    margin-top: -155px;
+}
+
+.taller-desktop1 {
+    border-radius: 20px;
+    width: 47%;
+
+}
+.taller-desktop2 {
+    border-radius: 20px;
+    width: 47%;
 
 }
 

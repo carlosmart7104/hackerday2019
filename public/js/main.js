@@ -1,9 +1,9 @@
-//console.log()
+console.log()
 
-//let mainNav = document.getElementById('js-menu');
-//let navBarToggle = document.getElementById('js-navbar-toggle');
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
 
-//navBarToggle.addEventListener('click', function () {
+navBarToggle.addEventListener('click', function () {
     
-   // mainNav.classList.toggle('active');
-//});
+    mainNav.classList.toggle('active');
+});

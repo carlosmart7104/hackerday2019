@@ -98,3 +98,147 @@ s
   font-size: 60px;
 }*/
 
+/*FOOTER*/
+
+    span.envelope a {
+        align-items: right;
+        
+    }
+
+    .hackdaymx a {
+        align-items: right;
+        
+    }
+
+    .footer i a {
+        display: flex;
+        flex-flow: column-wrap;
+        margin-left: 2em;
+        margin-right: 2em;
+        /*border: red 5px solid;*/
+    }
+
+    .footer {
+        align-content: center;
+        max-width: 100%;
+    }
+
+    .iconname {
+        margin-left: 50px;
+        color: white;
+    }
+
+    .foot {
+        display: flex;
+        flex-flow: column-wrap;
+        align-content: center;
+        font-family: 'Roboto';
+        text-align: center;
+        font-size: 20px;
+        padding: 1em;
+    }
+
+    span i a {
+        align-content: center;
+        font-family: 'Roboto';
+        text-align: center;
+        width: 100%;
+    }
+
+    .fechafooter {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+
+
+.lateralder {
+    display: inline-block;
+    margin-top: 0px;
+    border: red 5px solid;    
+}
+
+.gitcarlos,
+.carlosname {
+    margin-top: 50px;
+    margin-left: 260px;
+    justify-content: space-between;
+}
+
+
+.carlosname {
+    margin-left: 50px;
+}
+
+.gitcarlos,
+.carlosname {    
+    margin-bottom:0px;
+}
+
+.gitvalvich,
+.valvichname {
+    margin-top: 50px;
+    margin-left: -150px;
+    /*border: red 5px solid;*/
+}
+
+.valvichname {
+    margin-left: 50px;
+}
+
+
+.lateralizq {
+    display: inline;
+    margin-top: 0px;
+}
+
+.hackdaymx,
+.hackmxname {
+    margin-top: 0px;
+    margin-left: 0px;
+    justify-content: space-between;
+
+}
+
+.hackmxname {
+    margin-left: 50px;
+}
+
+.hackdaymx,
+.hackmxname {
+   margin-bottom: -55px;
+   /*border: red 5px solid;*/
+}
+
+.envelope,
+.envelopename {
+    margin-top: 0px;
+    margin-left: -410px;
+    margin-right: 50px;
+    margin-bottom: -100px; 
+}
+
+.envelopename {
+    margin-left: 50px;
+}
+
+.envelope,
+.envelopename {
+    margin-bottom: -175px;
+}
+
+.hackday,
+.hackname{
+    margin-left: -290px;
+    margin-right: 600px;
+   /* border: red 5px solid;*/
+}
+
+.hackname {
+    margin-left: 50px;
+}
+
+.hackday,
+.hackname {
+    margin-bottom: -60px;
+}
