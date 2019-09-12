@@ -98,7 +98,7 @@ s
   font-size: 60px;
 }*/
 
-/*FOOTER*/
+/*FOOTER DESKTOP*/
 
     span.envelope a {
         align-items: right;
@@ -242,3 +242,111 @@ s
 .hackname {
     margin-bottom: -60px;
 }
+
+/*FOOTER MOBILE*/
+footer {
+   /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
+   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  /* flex: 0 0 auto;
+  position: fixed;
+  left: 0;
+  bottom: 0; */
+  width: 100%;
+  color: white;
+}
+
+.footer_mobile {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: stretch;
+
+    }
+
+.footer_mobile i a {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.lateralizq {
+    display: flex;
+    flex-flow: column-wrap;
+    margin-left: 5px;
+    /*border: red 5px solid;*/
+}
+
+.hackdaymx {
+    margin-top: 50px;
+    margin-left: -43px;
+}
+
+.envelope {
+    margin-top: 100px;
+    margin-left: -43px;
+}
+
+.lateralder {
+    display: flex;
+    flex-flow: column-wrap;
+    margin-top: 0px;
+    margin-left: 5px;
+    /*border: red 5px solid;*/
+}
+
+.gitcarlos {
+    margin-top: 50px;
+    margin-left: -43px;
+}
+
+.iconname {
+    margin-left: 50px;
+    color: white;
+    font-size: 18px;
+    display: inline-block;
+}
+
+a.envelopename {
+    
+    font-size: 18px;
+}
+
+/*.fa-lg {
+     border: red 5px solid;
+}*/
+
+.foot {
+    display: flex;
+    flex-flow: column-wrap;
+    align-content: center;
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 20px;
+    padding: 0.5em;
+}
+
+.foot i {
+    padding: 1em;
+}
+
+
+span i a {
+    align-content: center;
+    font-family: 'Roboto';
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+.fechafooter {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-top: 2em;
+}
+
+
+
+
+footer,
+a.nounderline:link { 
+text-decoration:none; 
+} 

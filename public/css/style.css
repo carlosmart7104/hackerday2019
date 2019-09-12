@@ -255,88 +255,42 @@ a.animated-button.thar-one:before {
     margin-top: -20px;
 }
 
-a:link { 
-text-decoration:none; 
-} 
-
-a.nounderline:link { 
-text-decoration:none; 
-} 
-
-
 /*FOOTER*/
-.footer_desktop {
-    display: none;
-}
+
 
 footer {
-   /* Like the header, the footer will have a static height - it shouldn't grow or shrink.  */
-   /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
-  /* flex: 0 0 auto;
-  position: fixed;
-  left: 0;
-  bottom: 0; */
-  width: 100%;
-  color: white;
+    color: white;
+}
+
+.footer_desktop {
+    display: none;
+    color: white;
 }
 
 .footer_mobile {
     display: flex;
     flex-flow: column wrap;
     align-content: stretch;
+    margin: 0 auto;
+    margin-left: 30px;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 
     }
 
-.footer_mobile i a {
-    display: flex;
-    flex-flow: column wrap;
-}
+.footer_mobile a { 
+text-decoration: none; 
+color: white;
+} 
 
-.lateralizq {
-    display: flex;
-    flex-flow: column-wrap;
-    margin-left: 5px;
-    /*border: red 5px solid;*/
-}
+.foot a { 
+text-decoration: none; 
+color: white;
+} 
 
-.hackdaymx {
-    margin-top: 50px;
-    margin-left: -43px;
-}
 
-.envelope {
-    margin-top: 100px;
-    margin-left: -43px;
-}
 
-.lateralder {
-    display: flex;
-    flex-flow: column-wrap;
-    margin-top: 0px;
-    margin-left: 5px;
-    /*border: red 5px solid;*/
-}
 
-.gitcarlos {
-    margin-top: 50px;
-    margin-left: -43px;
-}
 
-.iconname {
-    margin-left: 50px;
-    color: white;
-    font-size: 18px
-    display: inline-block;
-}
-
-a.envelopename {
-    
-    font-size: 18px;
-}
-
-/*.fa-lg {
-     border: red 5px solid;
-}*/
 
 .foot {
     display: flex;
@@ -352,7 +306,6 @@ a.envelopename {
     padding: 1em;
 }
 
-
 span i a {
     align-content: center;
     font-family: 'Roboto';
@@ -367,6 +320,12 @@ span i a {
     width: 100%;
     padding-top: 2em;
 }
+
+
+
+
+
+
 
 /*CONFERENCIAS*/
 
@@ -678,25 +637,25 @@ a.animated-button.thar-two:before {
         /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .hackday {
+    .hackdaydesk {
         margin-right: 5px;
         display: inline-block;
         /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .hackname {
+    .hacknamedesk {
         display: inline-block;
         display: contents;
         justify-content: left;
         align-items: left;
     }
 
-    .hackerdaymx {
+    .hackerdaymxdesk {
         margin-right: 5px;
         display: inline-block;
         /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
-    .hackmxname {
+    .hackmxnamedesk {
         display: inline-block;
         display: contents;
         justify-content: left;
@@ -704,14 +663,14 @@ a.animated-button.thar-two:before {
     }
 
 
-    .envelope {
+    .envelopedesk {
         display: inline-block;
         margin-top: 0px;
         margin-left: 0px;
         /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .envelopename {
+    .envelopenamedesk {
         display: inline-block;
         display: contents;
         justify-content: left;
@@ -728,31 +687,36 @@ a.animated-button.thar-two:before {
         /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .gitvalvich {
+    .gitvalvichdesk {
         display: inline-block;
         /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .valvichname {
+    .valvichnamedesk {
         display: inline-block;
         display: contents;
         justify-content: left;
         align-items: left;
     }
 
-    .gitcarlos {
+    .gitcarlosdesk {
         display: inline-block;
         margin-left: 20px;
         margin-top: 0px;
         /*border: 5px solid rgba(232, 0, 116, 0.85);*/
     }
 
-    .carlosname {
+    .carlosnamedesk {
         display: inline-block;
         display: contents;
         justify-content: left;
         align-items: left;
     }
+
+    .footer_desktop a { 
+        text-decoration: none; 
+        color: white;
+    } 
 
     
 
