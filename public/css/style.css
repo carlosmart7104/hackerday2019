@@ -15,9 +15,23 @@ body {
 
 /*menu bar*/
 
-.navbar {
+ul.navbar {
     font-size: 18px;
-    padding-bottom: 10px;
+    display: flex;
+    
+   /* background-color: #090A31;*/
+    
+}
+
+.transbox {
+    position: fixed;
+    width: 100%;
+    z-index:1 !important;
+    /*opacity:0.6;
+    filter:alpha(opacity=60); /* IE < 9.0 */
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    background: rgba(9,10,49,.7);
 }
 
 .main-nav {
@@ -75,12 +89,16 @@ body {
 
 /*banner principal*/
 
+.banner {
+    padding-top: 20px;
+}
+
 .logobanner {
 	width: 150px;
 	max-width: 50%;
     display:block;
     margin:auto;
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 h1 {
@@ -546,13 +564,37 @@ a.animated-button.thar-two:before {
         display: none;
     }
 
-    .navbar {
+    .transbox {
+        display: none;
+    }
+
+    .transbox-desk {
+        display: contents;
+    }
+
+    .transbox-desk {
+    padding: 0 100px;
+    width: 100%
+    height: 70px;
+    box-sizing: border-box;
+    background: rgba(9,10,49,.7);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    z-index:1 !important;
+    opacity:0.6;
+    filter:alpha(opacity=60); /* IE < 9.0 */
+}
+
+
+    .navbar{
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
         height: 70px;
         align-items: center;
+        position: fixed;
+        width: 100%;
     }
+
     .main-nav {
         display: flex;
         margin-right: 30px;
@@ -584,6 +626,10 @@ a.animated-button.thar-two:before {
     .logo:hover,
     .nav-links:hover {
         color: rgba(255, 255, 255, 1);
+    }
+
+    .banner {
+        padding-top: 70px;
     }
 
     .logobanner {
