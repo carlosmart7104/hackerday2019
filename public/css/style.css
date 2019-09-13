@@ -580,7 +580,7 @@ a.animated-button.thar-two:before {
     background: rgba(9,10,49,.7);
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
     z-index:1 !important;
-    opacity:0.6;
+    /*opacity:0.6;
     filter:alpha(opacity=60); /* IE < 9.0 */
 }
 
