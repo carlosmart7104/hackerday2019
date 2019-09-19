@@ -6,11 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet'/>
   	<title>HackerDay 2019</title>
 </head>
 <body>
 	<nav id="myNav" class="navbar navbar-desk transbox transbox-desk">
-	  <span class="navbar-toggle" id="js-navbar-toggle" onclick="openNav()">
+	  <span class="navbar-toggle" id="js-navbar-toggle" onclick="openNav();">
         <img src="img/menubar.svg" class="menubar">
       </span>
 	  <a href="#" class="logo">
@@ -207,6 +209,7 @@
 				</tr>
 		    </table>
 		</div>-->
+	<!--<div id="map"></div>--> 
 	<footer>
 		<h1 class="contact" id="contact">CONTACTO</h1>
 			<div class="footer_mobile">
@@ -286,12 +289,21 @@
 						<a href="https://github.com/carlosmart7104" class="iconname carlosnamedesk" target="_blank">Supervisado por: carmajs</a>
 					</div>
 				</div>
-			</div>  
+			</div> 
 	</footer>
-		<span class="foot">
-				<i class="fa fa-copyright fa-stack-1x fa-inverse">2019</i><br>
-				<a class="fechafooter">Hacker Day Veracruz<br>AllRigths Reserved</a>
-		</span> 
+	<span class="foot">
+		<i class="fa fa-copyright fa-stack-1x fa-inverse">2019</i><br>
+		<a class="fechafooter">Hacker Day Veracruz<br>AllRigths Reserved</a>
+	</span> 
   <script type="text/javascript" src="js/main.js"></script>
+  <script‌ ‌async‌ src="https://www.googletagmanager.com/gtag/js?id=UA-148145036-1"></script>‌ ‌
+	<script>‌
+		if (window.location.hostname.includes('hackerday.org')) {
+  			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+			  gtag('config', 'UA-148145036-1');
+			} 
+	</script>‌
 </body>
 </html>
