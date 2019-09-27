@@ -8,14 +8,18 @@ navBarToggle.addEventListener('click', function () {
     mainNav.classList.toggle('active');
 });
 
-mapboxgl.accessToken = 'pk.eyJ1IjoidmFsdml0Y2giLCJhIjoiY2p6dGw1a2IzMDZoazNjcDlocDhqNWM2bSJ9.bDEhLLP89f3bqEfFinF_0w';
+mapboxgl.accessToken = 'pk.eyJ1IjoiY2FybG9zbWFydDcxMDQiLCJhIjoiY2p5b3Z4anp0MTk4azNqbzloZWZpd2R5bCJ9.zY0vP4G4sBCXxsVlKTPDaw';
 
 var map = new mapboxgl.Map({
 	container: 'map',
-	style: 'mapbox://styles/mapbox/light-v9',
+	style: 'mapbox://styles/carlosmart7104/ck11p5avf0ulw1cpcnb3b0t5o',
 	center: [-96.161224, 19.199093],
-	zoom: 20
+	zoom: 14.75
 });
+
+var marker = new mapboxgl.Marker()
+  .setLngLat([-96.161224, 19.199093])
+  .addTo(map);
 
 var Swiper = new Swiper ('.swiper-container', {
 	slidesPerView: 3,
