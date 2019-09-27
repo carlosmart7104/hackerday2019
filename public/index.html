@@ -3,13 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content= "width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" type="image/png" href="img/hdbg.png"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet'/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.0/flexslider.css">-->
+	<!--<link rel="stylesheet" href="flexslider.css" type="text/css">-->
   	<title>HackerDay 2019</title>
 </head>
 <body>
+<!-- BARRA DE NAVEGACIÓN-->
 	<nav id="myNav" class="navbar navbar-desk transbox transbox-desk">
 	  <span class="navbar-toggle" id="js-navbar-toggle"">
         <img src="img/menubar.svg" class="menubar">
@@ -28,13 +34,14 @@
         <li><a href="#contact" class="nav-links">Contacto</a></li>
       </ul>     
 	</nav>
+<!-- BANNER PRINCIPAL -->
 	<div class="banner">
 		<span class="banner-toggle" id="js-banner-toggle">
 			<img src="img/hdbg.png" class="logobanner">
 		</span>
 		<div class="lugaryfecha">
 			<h1 class="ver">VERACRUZ</h1>
-			<h4 class="hora">10:00 - 16:00</h4>
+			<h4 class="hora">10:00 - 17:00</h4>
 			<h4 class="institutodesktop">INSTITUTO TECNOLOGICO DE VERACRUZ</h4>
 			<h4 class="instituto">INSTITUTO TECNOLOGICO DE</h4>
 			<h4 class="ver2"> VERACRUZ</h4>
@@ -48,14 +55,77 @@
 			<img src="img/linesgrdsmall.svg" class="imglinesgrdsmall">
 		</div>		
 	</div>
-	<!--<div class="Conferencias">
-		<div class="conf-mobile">
-			<h1 class="confname">CONFERENCIAS</h1>
-			<div class="circle">
+
+<!-- CONFERENCIAS DESKTOP & MOBILE -->
+<!--<div class="confname-container">
+	<h1 class="confname-desktop">CONFERENCIAS</h1>
+</div>
+<!--<div class="confmobile">
+	<div class="swiper-container-confmob" id="container-confmob">
+	    <div class="swiper-wrapper" id="wrapper-confmob">
+	    	<!-- Slides -->
+	     <!-- <div class="swiper-slide-mob flexbox-confmob" id="slide-confmob">
+	      	<img src="img/ricardo.jpg" class="circle-desk">
+		    	<div class="conf-data-mob">
+					<p class="confnamep"><strong class="carlosric">No todo el Blockchain son cryptomonedas</strong></p>
+					<p>Nombre Conferencista<br>Ocupación</p>
+					<div class="conficons">
+						<span class="fa-stack conficon">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</span>
+						<span class="fa-stack conficon">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</span>
+					</div>
+				</div>
 			</div>
-			<div class="conf-data">
-				<p class="nombreconferencia">NOMBRE CONFERENCIA</p>
-				<p>Nombre Conferencista<br>Ocupación</p>
+			<div class="swiper-pagination-confmob"></div>
+	    </div>
+	</div>
+</div>-->
+<!--<div class="conferencias-desktop">
+	<div class="container-conf">
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/ricardo.jpg" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">No todo el Blockchain son cryptomonedas</strong></p>
+				<p>Carlos Ricardo Ortíz Sordo<br>COO and Co-Founder<br><strong>Logiety</strong></p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/ricardo.sordo.3" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/ricardo.jpg" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">Videojuegos:<br> una nueva economía</strong></p>
+				<p>Alberto Servín<br>Director General<br><strong>EXODO STUDIOS</strong></p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="www.facebook.com/ExodoEstudios" target="_blank">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/ricardo.jpg" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">Mecanismos de Seguridad <br>en Páginas Web</strong></p>
+				<p>Miguel Angel Pérez Cabada<br>Docente<br><strong>Instituto Tecnológico de Veracruz</strong></p>
 				<div class="conficons">
 					<span class="fa-stack conficon">
 						<i class="fa fa-circle fa-stack-2x"></i>
@@ -65,151 +135,148 @@
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
 					</span>
-					<span class="fa-stack conficon">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-					</span>
 				</div>
 			</div>
 		</div>
-		<div class="confname-desktop">
-			<h1 class="confname">CONFERENCIAS</h1>
-	    </div>
-		<div class="conf-desktop">
-			<div class="confrect1">
-				<div class="circle"></div>
-				<div class="conf-data">
-					<p class="nombreconferencia">NOMBRE CONFERENCIA</p>
-					<p>Nombre Conferencista<br>Ocupación</p>
-					<div class="conficons">
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
-			    </div>
-			</div>
-			<div class="confrect2">
-				<div class="circle"></div>
-				<div class="conf-data">
-					<p class="nombreconferencia">NOMBRE CONFERENCIA</p>
-					<p>Nombre Conferencista<br>Ocupación</p>
-					<div class="conficons">
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
-			    </div>
-			</div>
-			<div class="confrect3">
-				<div class="circle"></div>
-				<div class="conf-data">
-					<p class="nombreconferencia">NOMBRE CONFERENCIA</p>
-					<p>Nombre Conferencista<br>Ocupación</p>
-					<div class="conficons">
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
-			    </div>
-			</div>
-	    </div>
-	    <h1 class="talleres">TALLERES</h1>
-	    <table class="talleres-mobile">
+	</div>
+</div>-->
+
+<!-- TALLERES -->
+<!--<h1 class="talleres">TALLERES</h1>
+	<div class="tall-container-mob">
+		<div class="tallmob-container">
+		    <table class="talleres-mobile">
 				<tr>
-				  <td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-				  <td></td>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
+					<td></td>
 				</tr>
 				<tr>
-				  <td class="datavis">Data Visualization<br>con React</td>
+					<td class="datavis">Data Visualizatio<br>con React</td>
 				</tr>
 				<tr>
-				  <td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
+					<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
 				</tr>
-	    </table>
-	    <div class="col-3 buttontaller">
-			<a href="" class="btn btn-sm animated-button thar-two">REGÍSTRATE</a>
+		    </table>
+		    <div class="col-3 buttontaller">
+				<a href="" class="btn btn-sm animated-button thar-two">REGÍSTRATE</a>
+			</div>
 		</div>
-		<div class="talleres-desktop">
-		    <table class="taller-desktop1">
-				<tr>
-					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="datavis">Data Visualization<br>con React</td>
-				</tr>
-				<tr>
-					<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
-				</tr>
-		    </table>
-		    <table align="right" class="taller-desktop2">
-				<tr>
-					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="datavis">Data Visualization<br>con React</td>
-				</tr>
-				<tr>
-					<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
-				</tr>
-		    </table>
+	</div> -->
+		<!-- Slider main container -->
+		<!--<div class="swiper-container container-tall talleres-desktop">
+		    <!-- Additional required wrapper -->
+		    <!--<div class="swiper-wrapper wrapper-tall">
+		        <!-- Slides --> 
+		       <!-- <div class="swiper-slide flexbox slide-tall">
+		        	<table class="taller-desktop taller-desktop1">
+						<tr>
+							<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="datavis">Data Visualization<br>con React</td>
+						</tr>
+						<tr>
+							<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
+						</tr>
+		    		</table>
+		    		<div class="boton-container">
+		    			<div class="col-3-t buttontallerdesk">
+						<a href="" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+						</div>
+					</div>
+		        </div>
+		        <div class="swiper-slide flexbox slide-tall">
+		        	<table class="taller-desktop taller-desktop2">
+						<tr>
+							<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="datavis">Data Visualization<br>con React</td>
+						</tr>
+						<tr>
+							<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
+						</tr>
+		    		</table>
+		    		<div class="boton-container">
+		    			<div class="col-3-t buttontallerdesk">
+						<a href="" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+						</div>
+					</div>		        
+		        </div>
+		        <div class="swiper-slide flexbox slide-tall">
+		        	<table class="taller-desktop taller-desktop3">
+						<tr>
+							<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="datavis">Data Visualization<br>con React</td>
+						</tr>
+						<tr>
+							<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
+						</tr>
+		    		</table>
+		    		<div class="boton-container">
+		    			<div class="col-3-t buttontallerdesk">
+						<a href="" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+						</div>
+					</div>		        	
+		        </div>
+		    </div>
+		    <!-- If we need pagination -->
+		   <!-- <div class="swiper-pagination"></div>
+
+		    <!-- If we need navigation buttons -->
+		  <!--  <img src="img/left-arrow.svg" class="arrowleft swiper-button-prev">
+		    <img src="img/right-arrow.svg" class="arrowleft swiper-button-next">	
 		</div>
-		<div class="talleres-desktop">
-		    <table class="taller-desktop1">
-				<tr>
-					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="datavis">Data Visualization<br>con React</td>
-				</tr>
-				<tr>
-					<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
-				</tr>
-		    </table>
-		    <table align="right" class="taller-desktop2">
-				<tr>
-					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td class="datavis">Data Visualization<br>con React</td>
-				</tr>
-				<tr>
-					<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
-				</tr>
-		    </table>
-		</div>-->
-	<!--<h1 class="locationname">Ubicación</h1>
-	<div id="map"></div>-->
+
+<!-- PATROCINADORES -->
+
+<h1 class="patname-desk">PATROCINADORES</h1>
+<div class="patrocinadores">
+	<div class="patdesktop">
+		<div class="patimage-container">
+			<div class="pccontainer">
+				<a href="https://www.pcdigital.com.mx/" target="_blank">
+					<img src="img/pcdigital.png" class="pcdigital">
+				</a>
+			</div>
+			<div class="fractal-container">
+				<a href="http://www.fractalinside.com/" target="_blank">
+					<img src="img/fractal.png" class="fractal">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="patname-mob-container">
+		<h1 class="patname-mob">PATROCINADORES</h1>
+	</div>
+	<div class="patmob">
+		<div class="patmobimg-container">
+			<div class="pccontainer-mob">
+				<a href="https://www.pcdigital.com.mx/" target="_blank">
+					<img src="img/pcdigital.png" class="pcdigital-mob">
+				</a>
+			</div>
+			<div class="fractal-container-mob">
+				<a href="http://www.fractalinside.com/" target="_blank">
+					<img src="img/fractal.png" class="fractal-mob">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- UBICACIÓN -->
+<h1 class="locationname">Ubicación</h1>
+<div class="mapcontainer">
+	<div id="map"></div>
+</div>
+
+<!-- FOOTER -->
 	<footer>
 		<h1 class="contact" id="contact">CONTACTO</h1>
 			<div class="footer_mobile">
@@ -296,9 +363,12 @@
 		<a class="fechafooter">Hacker Day Veracruz<br>AllRigths Reserved</a>
 	</span>
 
-
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
-  <script type="text/javascript" src="js/main.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  	<!--<script src="jquery.flexslider.js"></script>-->
+  	<script src='https://api.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  	<script type="text/javascript" src="js/main.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148145036-1"></script>
 	<script>
 	  if (window.location.hostname.includes('hackerday.org')) {
