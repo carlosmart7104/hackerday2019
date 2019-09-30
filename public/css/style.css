@@ -52,11 +52,13 @@ ul.navbar {
     
 }
 .logoimg {
-    display: inline-block;
+    display: flex;
     width: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
+   /*border: 6px solid #49C9F6;
+   border-radius: 50%;*/
 }
 
 .logoletras {
@@ -274,7 +276,7 @@ a.animated-button.thar-one:before {
     margin-top: -20px;
 }
 
-/*FOOTER*/
+/*FOOTER MOBILE*/
 
 
 footer {
@@ -334,54 +336,67 @@ span i a {
     padding-top: 2em;
 }
 
-/*CONFERENCIAS*/
+/*CONFERENCIAS MOBILE*/
 
 .conferencias-desktop {
     display: none;
 }
 
-/*h1.confname {
-    color: #26F4FF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}*/
+.flexbox-confmob {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-.nombreconferencia {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    margin-bottom: 10px;
+#confmob {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+}
+
+.container-confmob {
+    margin: 20px;
+}
+
+h1.confname-desktop {
+    color: #26F4FF;
+    margin-top: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .carlosric {
     text-transform: uppercase;
-
 }
 
-
-.Conferencias {
-    padding: 2em;
-}
-
-.circle {
-   border: 5px solid rgba(232, 0, 116, 0.85);
-   align-items: center;
+.circle-mob {
+   justify-content: center;
+   border: 6px solid rgba(232, 0, 116, 0.85);
    width: 150px;
    height: 150px;
    background: #49C9F6;
    border-radius: 50%;
-   margin: 0 auto;
-   margin-top: 20px;
    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 }
 
-.conf-data {
+img.circle-mob {
+    padding: 0.2em;
+}
+
+.conf-data-mob {
     margin-top: 20px;
 }
 
-.conf-data p {
+.conf-data-mob p {
     text-align: center;
     color: white;
     font-family: 'Roboto';
     font-size: 20px;
+}
 
+p.confnamep {
+    margin-top: 15px;
 }
 
 .conficons {
@@ -394,6 +409,53 @@ span i a {
 .fa-stack {
     color: black;
 }
+
+/*ALIADOS MOBILE*/
+
+
+
+.aliadosh-mob {
+}
+
+.aliados-desk {
+    display: none;
+}
+
+.aliadosimg-mob {
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.logiety-containermob,
+.itver-containermob,
+.raccoons-containermob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*border: solid 5px #26F4FF;*/
+
+}
+
+img.logietymob {
+    width: 150px;
+}
+
+
+
+img.itvermob {
+    width: 150px;
+}
+
+
+img.raccoonsmob {
+    width: 150px;
+    margin: -20px;
+}
+
+
+
 
 /*TALLERES MOBILE*/
 
@@ -508,21 +570,21 @@ a.animated-button.thar-two:before {
 /*PATROCINADORES MOBILE*/
 
 .patname-desk {
-    display: none;
+    padding: 1em;
 }
 
 .patdesktop {
     display: none;
 }
 
-.patname-mob-container {
+/*.patname-mob-container {
 
     display: inline;
     margin: 40px;
-}
+}*/
 
 h1.patname-mob {
-    padding: 1em;
+    padding: 0;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -532,7 +594,7 @@ h1.patname-mob {
 .patmob {
     display: flex;
     justify-content: center;
-    padding: 1em;
+    padding: 1.6em;
     /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 
 }
@@ -542,20 +604,23 @@ h1.patname-mob {
     flex-direction: column;
 }
 
-.pccontainer-mob {
+.pccontainer-mob,
+.fractal-container-mob,
+.exodo-container-mob {
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
 .pcdigital-mob {
     width: 300px;
 }
 
-.fractal-container-mob {
-
+.fractal-mob {
+    width: 230px;
 }
 
-.fractal-mob {
+.exodo-mob {
     width: 300px;
 }
 
@@ -581,6 +646,40 @@ h1.locationname {
         /*border-radius: 10px;*/
         right: 0 auto;
       }
+/*ORGANIZADORES MOBILE*/
+
+
+/*.orgname-mob {
+    margin: 50px;
+}*/
+
+.orgdesktop {
+    display: none;
+}
+
+.orgcontainer-mob {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 50px;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+}
+
+.ctx-containermob,
+.scientiax-containermob {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+img.scientiaxmob {
+    width: 300px;
+}
+
+img.ctxmob {
+    width: 350px;
+}
 
 
 
@@ -681,7 +780,7 @@ h1.locationname {
 
     .main-nav {
         display: flex;
-        margin-right: 30px;
+        margin-right: 10px;
         flex-direction: row;
         justify-content: flex-end;
     }
@@ -689,7 +788,7 @@ h1.locationname {
         margin: 0;
     }
     .nav-links {
-        margin-left: 40px;
+        margin-left: 30px;
         /*pointer-events: none;*/
         cursor: default;
     }
@@ -701,7 +800,7 @@ h1.locationname {
     display: inline-block;
     width: 180px;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-left: -20px;
     }
 
    .navbar-toggle {
@@ -747,7 +846,7 @@ h1.locationname {
 
 
 
-    /*FOOTER*/
+    /*FOOTER DESKTOP*/
     .footer_mobile {
         display: none;
         
@@ -857,10 +956,15 @@ h1.locationname {
 
 /*FLEXBOX & SWIPER CONF DESKTOP */
 
+#confmob {
+    display: none;
+}
+
 .conferencias-desktop {
     display: flex;
     justify-content: center;
 }
+
 
 .confname-container {
     padding: 1em;
@@ -897,17 +1001,13 @@ h1.locationname {
 }
 
 .flexbox-conf {
-    display: flex;
-    flex-wrap: wrap;
-    /*border: solid 5px #26F4FF;*/
-    display: flex;
     justify-content: center; /*alinear horizontal en flex*/
-    flex-wrap: wrap;
 }
 
 
 .circle-desk {
-   border: 5px solid rgba(232, 0, 116, 0.85);
+    justify-content: center;
+   border: 6px solid rgba(232, 0, 116, 0.85);
    width: 150px;
    height: 150px;
    background: #49C9F6;
@@ -918,6 +1018,7 @@ h1.locationname {
 
 .container-conf {
     justify-content: center;
+    flex-wrap: wrap;
     width: 90%;
     height: 100%;
     display: flex;
@@ -936,8 +1037,28 @@ h1.locationname {
     margin: 30px;
     }
 
-span.conficon a i {
+.confimg-container {
+    justify-content: center;
+}
+
+.conficons a { 
     text-decoration: none;
+ }
+
+.conficons a:hover {
+    color: rgba(232, 0, 116, 0.85);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*.conficon a:link {
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}*/
+
+img.circle-desk {
+    padding: 0.2em;
+    margin-left: 25%;
 }
 
 
@@ -958,10 +1079,6 @@ span.conficon a i {
 .container-tall {
     width: 100%;
     height: 400px;
-}
-
-.confmobile {
-    display: none;
 }
 
 .talleres-desktop{
@@ -1082,9 +1199,9 @@ h1.talleres {
 
 /*PATROCINADORES DESKTOP*/
 
-.patname-mob-container {
+/*.patname-mob-container {
     display: none;
-}
+}*/
 
 .patmob {
     display: none;
@@ -1101,6 +1218,63 @@ h1.talleres {
 }
 
 .patdesktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    border: solid 5px #26F4FF;
+    border-radius: 20px;*/
+}
+
+.patimage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pccontainer,
+.exodo-container,
+.fractal-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    /*border: solid 5px #26F4FF;*/
+}
+
+
+img.fractal {
+    max-width: 200px;
+}
+
+img.pcdigital {
+    max-width: 400px;
+    /*border: solid 5px #26F4FF;*/
+}
+
+img.exodo {
+    max-width: 400px;
+}
+
+
+
+
+/*ALIADOS DESKTOP*/
+
+.aliados-mob {
+    display: none;
+}
+
+h1.aliadosh {
+    padding: 1em;
+}
+
+.aliados {
+    display: flex;
+    justify-content: center;
+}
+
+.aliados-desk {
     justify-content: center;
     width: 95%;
     height: 100%;
@@ -1109,29 +1283,106 @@ h1.talleres {
     border-radius: 20px;*/
 }
 
-.patimage-container {
+.aliadosimg-container {
     display: inline-flex;
 }
 
-.pccontainer {
+.logiety-container {
     display: inline-flex;
     align-items: center;
     /*border: solid 5px #26F4FF;*/
-    margin: 20px;
+    margin: 10px;
+
 }
 
-.fractal-container {
-    margin: 20px;
+img.logiety {
+    max-width: 150px;
 }
 
-img.fractal {
-    max-width: 300px;
-}
-
-img.pcdigital {
-    max-width: 300px;
+.itver-container {
+    display: inline-flex;
+    align-items: center;
     /*border: solid 5px #26F4FF;*/
+    margin: 10px;
+
 }
+
+img.itver {
+    max-width: 150px;
+}
+
+.raccoons-container {
+    display: inline-flex;
+    align-items: center;
+    /*border: solid 5px #26F4FF;*/
+    margin: 10px;
+
+}
+
+img.raccoons {
+    max-width: 150px;
+}
+
+/*ORGANIZADORES DESKTOP*/
+
+.orgmob {
+    display: none;
+}
+
+.orgname {
+    padding: 1em;
+}
+
+..orgname-mob {
+    display: none;
+}
+
+.organizadores {
+    display: flex;
+    justify-content: center;
+}
+
+.orgdesktop {
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    border: solid 5px #26F4FF;
+    border-radius: 20px;*/
+}
+
+.aliadosimg-container {
+    display: inline-flex;
+}
+.orgimg-container {
+    display: inline-flex;
+}
+
+.ctx-container {
+    display: inline-flex;
+    align-items: center;
+    /*border: solid 5px #26F4FF;*/
+    margin: 30px;
+
+}
+
+img.ctx {
+    max-width: 500px;
+}
+
+.scientiax-container {
+    display: inline-flex;
+    align-items: center;
+    /*border: solid 5px #26F4FF;*/
+    margin: 30px;
+
+}
+
+img.scientiax {
+    max-width: 400px;
+}
+
 
 }
 

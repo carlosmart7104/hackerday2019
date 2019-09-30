@@ -17,7 +17,7 @@
 <body>
 <!-- BARRA DE NAVEGACIÓN-->
 	<nav id="myNav" class="navbar navbar-desk transbox transbox-desk">
-	  <span class="navbar-toggle" id="js-navbar-toggle"">
+	  <span class="navbar-toggle" id="js-navbar-toggle">
         <img src="img/menubar.svg" class="menubar">
       </span>
 	  <a href="#" class="logo">
@@ -28,10 +28,11 @@
       	<!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
         <!--<li><a href="#" class="nav-links">Conferencias</a></li>
         <li><a href="#" class="nav-links">Talleres</a></li>
-        <li><a href="#" class="nav-links">Concurso</a></li>
-        <li><a href="#" class="nav-links">Aliados</a></li>-->
-        <li><a href="#" class="nav-links">Patrocinios</a></li>
-        <li><a href="#" class="nav-links">Ubicación</a></li>
+        <li><a href="#" class="nav-links">Concurso</a></li>-->
+        <li><a href="#org" class="nav-links">Organizadores</a></li>
+        <li><a href="#pat" class="nav-links">Patrocinios</a></li>
+        <li><a href="#ali" class="nav-links">Aliados</a></li>
+        <li><a href="#loc" class="nav-links">Ubicación</a></li>
         <li><a href="#contact" class="nav-links">Contacto</a></li>
       </ul>     
 	</nav>
@@ -58,35 +59,142 @@
 	</div>
 
 <!-- CONFERENCIAS DESKTOP & MOBILE -->
-<!--<div class="confname-container">
+<div class="confname-container">
 	<h1 class="confname-desktop">CONFERENCIAS</h1>
 </div>
-<!--<div class="confmobile">
-	<div class="swiper-container-confmob" id="container-confmob">
-	    <div class="swiper-wrapper" id="wrapper-confmob">
-	    	<!-- Slides -->
-	     <!-- <div class="swiper-slide-mob flexbox-confmob" id="slide-confmob">
-	      	<img src="img/ricardo.jpg" class="circle-desk">
-		    	<div class="conf-data-mob">
-					<p class="confnamep"><strong class="carlosric">No todo el Blockchain son cryptomonedas</strong></p>
-					<p>Nombre Conferencista<br>Ocupación</p>
-					<div class="conficons">
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
+
+<!-- Slides -->
+<div class="swiper-slide-mob flexbox-confmob" id="confmob">
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/ricardo.jpg" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">No todo el Blockchain son cryptomonedas</strong></p>
+				<p class="confnamep">Carlos Ricardo Ortíz Sordo<br>COO and Co-Founder<br><strong>Logiety</strong></p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/ricardo.sordo.3" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlos-ricardo-ortiz-sordo-92ab234a/">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
 				</div>
 			</div>
-			<div class="swiper-pagination-confmob"></div>
-	    </div>
+		</div>
 	</div>
-</div>-->
-<!--<div class="conferencias-desktop">
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/servin.jpg" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">Videojuegos:<br>Una nueva economía</strong></p>
+				<p class="confnamep">Alberto Servín<br>Director General<br><strong>EXODO STUDIOS</strong></p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="www.facebook.com/ExodoEstudios" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/miguel.jpg" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">Mecanismos de Seguridad <br>en Páginas Web</strong></p>
+				<p class="confnamep">Miguel Angel Pérez Cabada<br>Docente<br><strong>Instituto Tecnológico de<br> Veracruz</strong></p>
+				<!--<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="www.facebook.com/ExodoEstudios" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>-->
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/rodrigo.png" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">Introducción a <br>Patrones de diseño</strong></p>
+				<p class="confnamep">Rodrigo Reynaldo Jácome Sarabia<br>Gerente<br><strong>Fractal Inside Development</strong></p>
+				<!--<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="www.facebook.com/ExodoEstudios" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>-->
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/juan.jpg" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">El arte de la magia<br>aplicado a la ingeniería social</strong></p>
+				<p class="confnamep">Juan Antonio Amat<br>Coordinador<br><strong>Vinculación Raccoons</strong></p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/astroamat" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/antonioamat" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/carlos.jpg" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">La ruta<br>del programador</strong></p>
+				<p class="confnamep">Carlos Martínez<br>CTO and Co-Founder<br><strong>Scientiax</strong></p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/carlosmartinex" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlosmart7104" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="conferencias-desktop">
 	<div class="container-conf">
 		<div class="flexbox-conf" id="slide-conf">
 		<img src="img/ricardo.jpg" class="circle-desk">
@@ -101,14 +209,16 @@
 						</a>
 					</span>
 					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlos-ricardo-ortiz-sordo-92ab234a/">
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="flexbox-conf" id="slide-conf">
-		<img src="img/ricardo.jpg" class="circle-desk">
+		<img src="img/servin.jpg" class="circle-desk">
 			<div class="conf-data-desk">
 				<p class="confnamep"><strong class="carlosric">Videojuegos:<br> una nueva economía</strong></p>
 				<p>Alberto Servín<br>Director General<br><strong>EXODO STUDIOS</strong></p>
@@ -123,24 +233,79 @@
 			</div>
 		</div>
 		<div class="flexbox-conf" id="slide-conf">
-		<img src="img/ricardo.jpg" class="circle-desk">
+		<img src="img/miguel.jpg" class="circle-desk">
 			<div class="conf-data-desk">
 				<p class="confnamep"><strong class="carlosric">Mecanismos de Seguridad <br>en Páginas Web</strong></p>
 				<p>Miguel Angel Pérez Cabada<br>Docente<br><strong>Instituto Tecnológico de Veracruz</strong></p>
+				<!--<div class="conficons">
+					<a href="http://mike79.org/" target="_blank">
+						<span class="fa-stack conficon">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/rodrigo.png" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">Introducción a <br>Patrones de diseño</strong></p>
+				<p>Rodrigo Reynaldo Jácome Sarabia<br>Gerente<br><strong>Fractal Inside Development</strong></p>
+				<!--<div class="conficons">
+					<a>
+						<span class="fa-stack conficon">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/juan.jpg" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">El arte de la magia<br>aplicado a la ingeniería social</strong></p>
+				<p>Juan Antonio Amat<br>Coordinador<br><strong>Vinculación Raccoons</strong></p>
 				<div class="conficons">
 					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/astroamat" target="_blank">
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
 					</span>
 					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/antonioamat" target="_blank">
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/juan.jpg" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">La ruta<br>del programador</strong></p>
+				<p>Carlos Martínez<br>CTO and Co-Founder<br><strong>Scientiax</strong></p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/carlosmartinex" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlosmart7104" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
 					</span>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>-->
+</div>
 
 <!-- TALLERES -->
 <!--<h1 class="talleres">TALLERES</h1>
@@ -234,15 +399,55 @@
 		    <img src="img/right-arrow.svg" class="arrowleft swiper-button-next">	
 		</div>
 
+
+<!-- ORGANIZADORES -->
+<h1 id="org" class="orgname orgname-mob">ORGANIZADORES</h1>
+<div class="organizadores">
+	<div class="orgdesktop">
+		<div class="orgimg-container">
+			<div class="ctx-container">
+				<a href="https://www.comunidadtx.com/" target="_blank">
+					<img src="img/ctxbco.png" class="ctx">
+				</a>
+			</div>
+			<div class="scientiax-container">
+				<a target="_blank">
+					<img src="img/scientiaxbco.png" class="scientiax">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="orgmob">
+		<div class="orgcontainer-mob">
+			<div class="ctx-containermob">
+				<a href="https://www.comunidadtx.com/" target="_blank">
+					<img src="img/ctxbco.png" class="ctxmob">
+				</a>
+			</div>
+			<div class="scientiax-containermob">
+				<a target="_blank">
+					<img src="img/scientiaxbco.png" class="scientiaxmob">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
 <!-- PATROCINADORES -->
 
-<h1 class="patname-desk">PATROCINADORES</h1>
+<h1 id="pat" class="patname-desk">PATROCINADORES</h1>
 <div class="patrocinadores">
 	<div class="patdesktop">
 		<div class="patimage-container">
 			<div class="pccontainer">
 				<a href="https://www.pcdigital.com.mx/" target="_blank">
 					<img src="img/pcdigital.png" class="pcdigital">
+				</a>
+			</div>
+			<div class="exodo-container">
+				<a href="" target="_blank">
+					<img src="img/exodo.png" class="exodo">
 				</a>
 			</div>
 			<div class="fractal-container">
@@ -252,14 +457,19 @@
 			</div>
 		</div>
 	</div>
-	<div class="patname-mob-container">
-		<h1 class="patname-mob">PATROCINADORES</h1>
-	</div>
+	<!--<div class="patname-mob-container">
+		<h1 id="pat" class="patname-mob">PATROCINADORES</h1>
+	</div>-->
 	<div class="patmob">
 		<div class="patmobimg-container">
 			<div class="pccontainer-mob">
 				<a href="https://www.pcdigital.com.mx/" target="_blank">
 					<img src="img/pcdigital.png" class="pcdigital-mob">
+				</a>
+			</div>
+			<div class="exodo-container-mob">
+				<a href="" target="_blank">
+					<img src="img/exodo.png" class="exodo-mob">
 				</a>
 			</div>
 			<div class="fractal-container-mob">
@@ -271,8 +481,40 @@
 	</div>
 </div>
 
+<!-- ALIADOS -->
+
+<h1 id="ali" class="aliadosh aliadosh-mob">ALIADOS</h1>
+<div class="aliados">
+	<div class="aliados-mob">
+		<div class="aliadosimg-mob">
+			<div class="itver-containermob">
+				<a><img src="img/itver.png" class="itvermob"></a>
+			</div>
+			<div class="logiety-containermob">
+				<a><img src="img/logiety.png" class="logietymob"></a>
+			</div>
+			<div class="raccoons-containermob">
+				<a><img src="img/raccoons.png" class="raccoonsmob"></a>
+			</div>
+		</div>
+	</div>
+	<div class="aliados-desk">
+		<div class="aliadosimg-container">
+			<div class="itver-container">
+				<a><img src="img/itver.png" class="itver"></a>
+			</div>
+			<div class="logiety-container">
+				<a><img src="img/logiety.png" class="logiety"></a>
+			</div>
+			<div class="raccoons-container">
+				<a><img src="img/raccoons.png" class="raccoons"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- UBICACIÓN -->
-<h1 class="locationname">Ubicación</h1>
+<h1 id="loc" class="locationname">Ubicación</h1>
 <div class="mapcontainer">
 	<div id="map"></div>
 </div>
