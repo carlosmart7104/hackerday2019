@@ -26,13 +26,13 @@
 	  </a>
       <ul class="main-nav main-nav-desk" id="js-menu">
       	<!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-        <!--<li><a href="#" class="nav-links">Conferencias</a></li>
-        <li><a href="#" class="nav-links">Talleres</a></li>
+        <li><a href="#conferencias" class="nav-links">Conferencias</a></li>
+        <!--<li><a href="#" class="nav-links">Talleres</a></li>
         <li><a href="#" class="nav-links">Concurso</a></li>-->
-        <li><a href="#org" class="nav-links">Organizadores</a></li>
-        <li><a href="#pat" class="nav-links">Patrocinios</a></li>
-        <li><a href="#ali" class="nav-links">Aliados</a></li>
-        <li><a href="#loc" class="nav-links">Ubicación</a></li>
+        <li><a href="#organizadores" class="nav-links">Organizadores</a></li>
+        <li><a href="#patrocinadores" class="nav-links">Patrocinios</a></li>
+        <li><a href="#aliados" class="nav-links">Aliados</a></li>
+        <li><a href="#location" class="nav-links">Ubicación</a></li>
         <li><a href="#contact" class="nav-links">Contacto</a></li>
       </ul>     
 	</nav>
@@ -60,7 +60,7 @@
 
 <!-- CONFERENCIAS DESKTOP & MOBILE -->
 <div class="confname-container">
-	<h1 class="confname-desktop">CONFERENCIAS</h1>
+	<h1 class="confname-desktop" id="conferencias">CONFERENCIAS</h1>
 </div>
 
 <!-- Slides -->
@@ -145,7 +145,7 @@
 
 	<div class="flexbox-confmob" id="slide-confmob">
 		<div class="container-confmob flexbox-confmob">
-		<img src="img/juan.jpg" class="circle-mob">
+		<img src="img/juan.png" class="circle-mob">
 			<div class="conf-data-mob">
 				<p class="confnamep"><strong class="carlosric">El arte de la magia<br>aplicado a la ingeniería social</strong></p>
 				<p class="confnamep">Juan Antonio Amat<br>Coordinador<br><strong>Vinculación Raccoons</strong></p>
@@ -263,7 +263,7 @@
 			</div>
 		</div>
 		<div class="flexbox-conf" id="slide-conf">
-		<img src="img/juan.jpg" class="circle-desk">
+		<img src="img/juan.png" class="circle-desk">
 			<div class="conf-data-desk">
 				<p class="confnamep"><strong class="carlosric">El arte de la magia<br>aplicado a la ingeniería social</strong></p>
 				<p>Juan Antonio Amat<br>Coordinador<br><strong>Vinculación Raccoons</strong></p>
@@ -284,7 +284,7 @@
 			</div>
 		</div>
 		<div class="flexbox-conf" id="slide-conf">
-		<img src="img/juan.jpg" class="circle-desk">
+		<img src="img/carlos.jpg" class="circle-desk">
 			<div class="conf-data-desk">
 				<p class="confnamep"><strong class="carlosric">La ruta<br>del programador</strong></p>
 				<p>Carlos Martínez<br>CTO and Co-Founder<br><strong>Scientiax</strong></p>
@@ -401,7 +401,7 @@
 
 
 <!-- ORGANIZADORES -->
-<h1 id="org" class="orgname orgname-mob">ORGANIZADORES</h1>
+<h1 id="organizadores" class="orgname orgname-mob">ORGANIZADORES</h1>
 <div class="organizadores">
 	<div class="orgdesktop">
 		<div class="orgimg-container">
@@ -436,7 +436,7 @@
 
 <!-- PATROCINADORES -->
 
-<h1 id="pat" class="patname-desk">PATROCINADORES</h1>
+<h1 id="patrocinadores" class="patname-desk">PATROCINADORES</h1>
 <div class="patrocinadores">
 	<div class="patdesktop">
 		<div class="patimage-container">
@@ -453,6 +453,21 @@
 			<div class="fractal-container">
 				<a href="http://www.fractalinside.com/" target="_blank">
 					<img src="img/fractal.png" class="fractal">
+				</a>
+			</div>
+			<div class="raccoons-container">
+				<a>
+					<img src="img/raccoons.png" class="raccoons">
+				</a>
+			</div>
+			<div class="logiety-container">
+				<a href="http://www.logiety.com/" target="_blank">
+					<img src="img/logiety.png" class="logiety">
+				</a>
+			</div>
+			<div class="cafe-container">
+				<a href="http://www.cafedonjosepaez.com/" target="_blank">
+					<img src="img/cafe.png" class="cafe">
 				</a>
 			</div>
 		</div>
@@ -477,13 +492,28 @@
 					<img src="img/fractal.png" class="fractal-mob">
 				</a>
 			</div>
+			<div class="raccoons-patmob">
+				<a>
+					<img src="img/raccoons.png" class="raccoonsmob">
+				</a>
+			</div>
+			<div class="logiety-patmob">
+				<a href="http://www.logiety.com/" target="_blank">
+					<img src="img/logiety.png" class="logiety-mob">
+				</a>
+			</div>
+			<div class="cafe-patmob">
+				<a href="http://www.cafedonjosepaez.com/" target="_blank">
+					<img src="img/cafe.png" class="cafe-mob">
+				</a>
+			</div>
 		</div>
 	</div>
 </div>
 
 <!-- ALIADOS -->
 
-<h1 id="ali" class="aliadosh aliadosh-mob">ALIADOS</h1>
+<h1 id="aliados" class="aliadosh aliadosh-mob">ALIADOS</h1>
 <div class="aliados">
 	<div class="aliados-mob">
 		<div class="aliadosimg-mob">
@@ -495,6 +525,9 @@
 			</div>
 			<div class="raccoons-containermob">
 				<a><img src="img/raccoons.png" class="raccoonsmob"></a>
+			</div>
+			<div class="temach-containermob">
+				<a><img src="img/temach.png" class="temachmob"></a>
 			</div>
 		</div>
 	</div>
@@ -509,12 +542,15 @@
 			<div class="raccoons-container">
 				<a><img src="img/raccoons.png" class="raccoons"></a>
 			</div>
+			<div class="temach-container">
+				<a><img src="img/temach.png" class="temach"></a>
+			</div>
 		</div>
 	</div>
 </div>
 
 <!-- UBICACIÓN -->
-<h1 id="loc" class="locationname">Ubicación</h1>
+<h1 id="location" class="locationname">Ubicación</h1>
 <div class="mapcontainer">
 	<div id="map"></div>
 </div>

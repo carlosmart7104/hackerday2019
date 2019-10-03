@@ -429,7 +429,8 @@ p.confnamep {
 
 .logiety-containermob,
 .itver-containermob,
-.raccoons-containermob {
+.raccoons-containermob,
+.temach-containermob {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,14 +439,14 @@ p.confnamep {
 
 }
 
-img.logietymob {
+img.logietymob,
+img.itvermob,
+img.temachmob {
     width: 150px;
 }
 
-
-
-img.itvermob {
-    width: 150px;
+img.temachmob {
+    margin: 20px;
 }
 
 
@@ -606,22 +607,28 @@ h1.patname-mob {
 
 .pccontainer-mob,
 .fractal-container-mob,
-.exodo-container-mob {
+.exodo-container-mob,
+.raccoons-patmob,
+.logiety-patmob,
+.cafe-patmob {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
-.pcdigital-mob {
+.pcdigital-mob,
+.exodo-mob {
     width: 300px;
 }
 
 .fractal-mob {
     width: 230px;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 }
 
-.exodo-mob {
-    width: 300px;
+.logiety-mob,
+.cafe-mob {
+    width: 140px;
 }
 
 
@@ -1235,27 +1242,32 @@ h1.talleres {
 
 .pccontainer,
 .exodo-container,
-.fractal-container {
+.fractal-container,
+.raccoons-container,
+.logiety-container,
+.cafe-container {
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
     /*border: solid 5px #26F4FF;*/
 }
 
 
-img.fractal {
+img.pcdigital,
+img.exodo {
+    max-width: 500px;
+    /*border: solid 5px #26F4FF;*/
+}
+
+img.fractal,
+img.raccoons,
+img.logiety {
     max-width: 200px;
 }
 
-img.pcdigital {
-    max-width: 400px;
-    /*border: solid 5px #26F4FF;*/
+img.cafe {
+    max-width: 130px;
 }
-
-img.exodo {
-    max-width: 400px;
-}
-
 
 
 
@@ -1287,7 +1299,10 @@ h1.aliadosh {
     display: inline-flex;
 }
 
-.logiety-container {
+.logiety-container,
+.itver-container,
+.raccoons-container,
+.temach-container {
     display: inline-flex;
     align-items: center;
     /*border: solid 5px #26F4FF;*/
@@ -1295,32 +1310,14 @@ h1.aliadosh {
 
 }
 
-img.logiety {
-    max-width: 150px;
-}
-
-.itver-container {
-    display: inline-flex;
-    align-items: center;
-    /*border: solid 5px #26F4FF;*/
-    margin: 10px;
-
-}
-
-img.itver {
-    max-width: 150px;
-}
-
-.raccoons-container {
-    display: inline-flex;
-    align-items: center;
-    /*border: solid 5px #26F4FF;*/
-    margin: 10px;
-
-}
-
+img.logiety,
+img.itver,
 img.raccoons {
     max-width: 150px;
+}
+
+img.temach {
+    max-width: 130px;
 }
 
 /*ORGANIZADORES DESKTOP*/
@@ -1333,9 +1330,9 @@ img.raccoons {
     padding: 1em;
 }
 
-..orgname-mob {
+/*.orgname-mob {
     display: none;
-}
+}*/
 
 .organizadores {
     display: flex;
@@ -1349,8 +1346,30 @@ img.raccoons {
     height: 100%;
     display: flex;
     border: solid 5px #26F4FF;
-    border-radius: 20px;*/
+    border-radius: 20px;
 }
+
+.ctx-container,
+.scientiax-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 50px;
+    /*border: solid 5px #26F4FF;*/
+}
+
+img.scientiax {
+    width: 350px;
+}
+
+img.ctx {
+    width: 400px;
+}
+
+
+
+
+/*ALIADOS DESKTOP*/
 
 .aliadosimg-container {
     display: inline-flex;
