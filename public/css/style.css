@@ -427,10 +427,13 @@ p.confnamep {
     flex-wrap: wrap;
 }
 
-.logiety-containermob,
-.itver-containermob,
+.ieee-containermob,
+.xalapacode-containermob,
 .raccoons-containermob,
-.temach-containermob {
+.temach-containermob,
+.codemmunityx-containermob,
+.cis-containermob,
+.hf-containermob {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -439,16 +442,25 @@ p.confnamep {
 
 }
 
-img.logietymob,
-img.itvermob,
-img.temachmob {
+img.xalapacodemob,
+img.temachmob,
+img.cismob {
     width: 150px;
+}
+
+img.ieeemob,
+img.codemmunityxmob {
+    width: 200px;
 }
 
 img.temachmob {
     margin: 20px;
 }
 
+img.hfmob {
+    width: 130px;
+    margin-bottom: 50px;
+}
 
 img.raccoonsmob {
     width: 150px;
@@ -635,10 +647,28 @@ h1.patname-mob {
 .exodo-container-mob,
 .raccoons-patmob,
 .logiety-patmob,
-.cafe-patmob {
+.cafe-patmob,
+.itver-container-mob,
+.cg-container-mob,
+.voixty-patmob {
     display: flex;
     justify-content: center;
     margin: 20px;
+}
+
+.itver-mob,
+.cg-mob {
+    width: 230px;
+}
+
+
+.voixty-mob {
+    width: 280px;
+    margin: -50px;
+}
+
+.cafe-mob {
+    width: 180px;
 }
 
 .pcdigital-mob,
@@ -651,8 +681,7 @@ h1.patname-mob {
     /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 }
 
-.logiety-mob,
-.cafe-mob {
+.logiety-mob {
     width: 140px;
 }
 
@@ -1299,13 +1328,16 @@ h1.talleres {
 .raccoons-container,
 .logiety-container,
 .cafe-container,
-.itver-container,
-.cg-container,
-.voixty-container {
+.itver-container {
     display: flex;
     align-items: center;
     margin: 20px;
     /*border: solid 5px #26F4FF;*/
+}
+
+.cg-container,
+.voixty-container {
+
 }
 
 
@@ -1323,10 +1355,13 @@ img.cg {
     max-width: 280px;
 }
 
-img.fractal,
 img.raccoons,
 img.logiety {
-    max-width: 250px;
+    max-width: 200px;
+}
+
+img.fractal {
+    max-width: 240px;
 }
 
 img.cafe {
@@ -1364,14 +1399,18 @@ h1.aliadosh {
 }
 
 .aliadosimg-container {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .ieee-container,
 .xalapacode-container,
 .codemmunityx-container,
 .temach-container,
-.cis-container {
+.cis-container,
+.hf-container {
     display: inline-flex;
     align-items: center;
     /*border: solid 5px #26F4FF;*/
@@ -1382,6 +1421,12 @@ h1.aliadosh {
 img.ieee,
 img.codemmunityx {
     max-width: 240px;
+}
+
+img.hf {
+    max-width: 120px;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 img.xalapacode {
@@ -1409,6 +1454,7 @@ img.cis {
 }
 
 .orgdesktop {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 95%;
@@ -1444,7 +1490,10 @@ img.ctx {
     display: inline-flex;
 }
 .orgimg-container {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .ctx-container {
