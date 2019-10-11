@@ -464,9 +464,6 @@ img.raccoonsmob {
     display: none;
 }
 
-
-
-
 h1.talleres {
     color: #26F4FF;
     padding: 1em;
@@ -486,13 +483,6 @@ table {
 
 }
 
-td.datavis {
-    padding: 8px;
-    border-bottom: 5px solid #26F4FF;
-    border-collapse: collapse;
-    
-}
-
 td.deschor {
     padding: 20px;
     border-collapse: collapse;
@@ -502,24 +492,40 @@ td.deschor {
 td.iconotall {
     border-right: 5px solid #26F4FF;
     border-collapse: collapse;
+    width: 100px;
 }
 
 p.tallhorario {
     color: #E0274D;
 }
 
-/*BOTON TALLER*/
-.col-3 {
+
+td.tallname1 {
+    padding: 8px;
+    font-size: 12px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;
+    
+}
+
+
+
+
+/*BOTON TALLER MOBILE*/
+
+.col-3-t {
   /* IMPORTANTE */
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  /*margin-top: -100px;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 50px;*/
 }
 
-a.animated-button.thar-two {
+a.animated-button.thar-tall {
     color: #ffffff;
     cursor: pointer;
     position: absolute;
@@ -530,22 +536,22 @@ a.animated-button.thar-two {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 50%;
+    width: 220px;
     border-radius: 12px;
 }
 
-a.animated-button.thar-two:hover {
+a.animated-button.thar-tall:hover {
     color: #FFFFFF !important;
     background-color: transparent;
     text-shadow: none;
 }
-a.animated-button.thar-two:hover:before {
+a.animated-button.thar-tall:hover:before {
     position: absolute;
     bottom: 0%;
     top: auto;
     height: 100%;
 }
-a.animated-button.thar-two:before {
+a.animated-button.thar-tall:before {
     display: block;
     position: absolute;
     left: 0px;
@@ -559,14 +565,22 @@ a.animated-button.thar-two:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
+.boton-container {
+  /*border: 10px solid #26F4FF;
+  justify-content: flex-start;*/
+  width: 100%;
+  height: 50px;
+  margin-bottom: 100px;
+}
+
 .imgdatamobile {
     display: inline-block;
     width: 70px;
 }
 
-.talleres-desktop{
-    display: none;
-}
+
+
+
 
 /*PATROCINADORES MOBILE*/
 
@@ -1072,51 +1086,70 @@ img.circle-desk {
 
 
 /*TALLERES-DESKTOP*/
-
-/*FLEXBOX & SWIPER TALLER DESKTOP*/
+    /*FLEXBOX & TALLER DESKTOP*/
 
 .flexbox {
     /*border: solid 5px #26F4FF;*/
-    display: flex;
-    justify-content: space-around; /*alinear horizontal en flex*/
-    flex-wrap: wrap;
+    margin-right: 35px;
+    margin-bottom: 20px;
 
 }
 
-.container-tall {
-    width: 100%;
-    height: 400px;
-}
+
 
 .talleres-desktop{
-    display: inline;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: solid 5px #26F4FF;*/
 }
 
-.slide-tall, 
+
 .taller-desktop {
    /* margin-top: 20px;
     border: solid 5px #26F4FF;
     text-align: center;
     color: white;*/
     border-radius: 20px;
-    width: 80%;
+    width: 500px;
+    height: 200px;
     color: white;
     align-items: center; /*alinear verticalmente en flex*/
 }
 
-img.arrowleft {
-    width: 50px;
+td.tallname {
+    padding: 8px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;
 }
 
-td.datavis {
+td.tallname1 {
     padding: 8px;
     border-bottom: 5px solid #26F4FF;
     border-collapse: collapse;
     
 }
 
+p.desctallsmall {
+    font-size: 14px;
+}
+
+p.desctallmed {
+    font-size: 16px;
+}
+
+
+td.datavis {
+    padding: 6px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;
+    
+}
+
 td.deschor {
-    padding: 20px;
+    font-size: 15px;
     border-collapse: collapse;
     
 }
@@ -1128,6 +1161,11 @@ td.iconotall {
 
 p.tallhorario {
     color: #E0274D;
+    padding: 0px;
+}
+
+.hourcontainer2 {
+    padding: 5px;
 }
 
 
@@ -1139,8 +1177,8 @@ p.tallhorario {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: -100px;
-  /*align-items: center;
+  /*margin-top: -100px;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 50px;*/
 }
@@ -1156,7 +1194,7 @@ a.animated-button.thar-tall {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 50%;
+    width: 220px;
     border-radius: 12px;
 }
 
@@ -1185,6 +1223,14 @@ a.animated-button.thar-tall:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
+.boton-container {
+  /*border: 10px solid #26F4FF;
+  justify-content: flex-start;*/
+  width: 100%;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
 h1.talleres {
     padding: 1em;
 }
@@ -1197,12 +1243,7 @@ h1.talleres {
     display: none;
 }
 
-.boton-container {
-  /*border: 10px solid #26F4FF;
-  justify-content: flex-start;*/
-  width: 100%;
-  height: 50px;
-}
+
 
 /*PATROCINADORES DESKTOP*/
 
@@ -1329,10 +1370,6 @@ img.temach {
 .orgname {
     padding: 1em;
 }
-
-/*.orgname-mob {
-    display: none;
-}*/
 
 .organizadores {
     display: flex;
