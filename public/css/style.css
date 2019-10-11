@@ -500,13 +500,24 @@ p.tallhorario {
 }
 
 
+td.tallname {
+    padding: 8px;
+    font-size: 16px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse; 
+}
+
 td.tallname1 {
     padding: 8px;
-    font-size: 12px;
+    font-size: 14px;
     border-bottom: 5px solid #26F4FF;
-    border-collapse: collapse;
-    
+    border-collapse: collapse;   
 }
+
+p.desctallsmall {
+    font-size: 12px;
+}
+
 
 
 
@@ -565,7 +576,7 @@ a.animated-button.thar-tall:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
-.boton-container {
+.boton-containermob {
   /*border: 10px solid #26F4FF;
   justify-content: flex-start;*/
   width: 100%;
@@ -1239,7 +1250,7 @@ h1.talleres {
     display: none;
 }
 
-.buttontaller {
+.boton-containermob {
     display: none;
 }
 
@@ -1267,6 +1278,7 @@ h1.talleres {
 
 .patdesktop {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 95%;
@@ -1278,7 +1290,7 @@ h1.talleres {
 .patimage-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .pccontainer,
@@ -1286,28 +1298,43 @@ h1.talleres {
 .fractal-container,
 .raccoons-container,
 .logiety-container,
-.cafe-container {
+.cafe-container,
+.itver-container,
+.cg-container,
+.voixty-container {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 20px;
     /*border: solid 5px #26F4FF;*/
 }
 
 
 img.pcdigital,
 img.exodo {
-    max-width: 500px;
+    max-width: 480px;
     /*border: solid 5px #26F4FF;*/
+}
+
+img.itversponsor {
+    width: 300px;
+}
+
+img.cg {
+    max-width: 280px;
 }
 
 img.fractal,
 img.raccoons,
 img.logiety {
-    max-width: 200px;
+    max-width: 250px;
 }
 
 img.cafe {
-    max-width: 130px;
+    max-width: 240px;
+}
+
+img.voixty {
+    max-width: 470px;
 }
 
 
@@ -1340,10 +1367,11 @@ h1.aliadosh {
     display: inline-flex;
 }
 
-.logiety-container,
-.itver-container,
-.raccoons-container,
-.temach-container {
+.ieee-container,
+.xalapacode-container,
+.codemmunityx-container,
+.temach-container,
+.cis-container {
     display: inline-flex;
     align-items: center;
     /*border: solid 5px #26F4FF;*/
@@ -1351,13 +1379,17 @@ h1.aliadosh {
 
 }
 
-img.logiety,
-img.itver,
-img.raccoons {
-    max-width: 150px;
+img.ieee,
+img.codemmunityx {
+    max-width: 240px;
 }
 
-img.temach {
+img.xalapacode {
+    max-width: 140px;
+}
+
+img.temach,
+img.cis {
     max-width: 130px;
 }
 
