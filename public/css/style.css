@@ -367,6 +367,7 @@ h1.confname-desktop {
 }
 
 .carlosric {
+    color: #26F4FF;
     text-transform: uppercase;
 }
 
@@ -377,6 +378,7 @@ h1.confname-desktop {
    height: 150px;
    background: #49C9F6;
    border-radius: 50%;
+   margin-bottom: -20px;
    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 }
 
@@ -397,6 +399,17 @@ img.circle-mob {
 
 p.confnamep {
     margin-top: 15px;
+}
+
+.empresaconf {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.empresaconf2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 
 .conficons {
@@ -491,7 +504,7 @@ table {
 .talleres-mobile {
     border-radius: 20px;
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
 
 }
 
@@ -520,11 +533,19 @@ td.tallname {
     border-collapse: collapse; 
 }
 
+td.tallrubik {
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse; 
+}
+
 td.tensorflow {
     text-transform: uppercase;
     padding: 8px;
     font-size: 12px;
-    /*border-bottom: 5px solid #26F4FF;*/
+    border-bottom: 5px solid #26F4FF;
     border-collapse: collapse;   
 }
 
