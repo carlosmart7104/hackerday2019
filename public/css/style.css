@@ -7,10 +7,14 @@
 body {
   font-family: 'Roboto', 'IBM Plex Sans';
   min-height: 100vh;
-  background: -moz-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
+  background: -moz-linear-gradient(0deg, rgba(144,38,91,1) 0%, rgba(29,24,86,1) 35%, rgba(9,10,49,1) 67%);
+background: -webkit-linear-gradient(0deg, rgba(144,38,91,1) 0%, rgba(29,24,86,1) 35%, rgba(9,10,49,1) 67%);
+background: linear-gradient(0deg, rgba(144,38,91,1) 0%, rgba(29,24,86,1) 35%, rgba(9,10,49,1) 67%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#90265b",endColorstr="#090a31",GradientType=1);
+  /*background: -moz-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
   background: linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090a31",endColorstr="#e80074",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090a31",endColorstr="#e80074",GradientType=1);*/
 }
 
 /*menu bar*/
@@ -1195,8 +1199,9 @@ td.tallname {
 }
 
 td.tallname1 {
+    font-size: 13px;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 10px;
     border-bottom: 5px solid #26F4FF;
     border-collapse: collapse;
     
