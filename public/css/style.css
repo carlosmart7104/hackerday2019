@@ -520,16 +520,20 @@ td.tallname {
     border-collapse: collapse; 
 }
 
-td.tallname1 {
+td.tensorflow {
     text-transform: uppercase;
     padding: 8px;
-    font-size: 14px;
-    border-bottom: 5px solid #26F4FF;
+    font-size: 12px;
+    /*border-bottom: 5px solid #26F4FF;*/
     border-collapse: collapse;   
 }
 
 p.desctallsmall {
     font-size: 12px;
+}
+
+p.desctallmed2 {
+    font-size: 
 }
 
 
