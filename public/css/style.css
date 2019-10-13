@@ -224,13 +224,15 @@ a.animated-button.thar-one {
     color: #ffffff;
     cursor: pointer;
     position: absolute;
-    border: 2px solid rgba(232, 0, 116, 0.85);
+    border: 2px solid #E80074;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #E80074;
     height: 60px;
+    width: 250px;
     border-radius: 15px;
 }
 
@@ -255,7 +257,7 @@ a.animated-button.thar-one:before {
     z-index: -1;
     content: '';
     color: #000 !important;
-    background: rgba(232, 0, 116, 0.85);
+    background: transparent;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
@@ -665,7 +667,7 @@ h2.consultamob {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    margin-top: -10px;
 }
 
 h2.basesmob {
@@ -675,7 +677,14 @@ h2.basesmob {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
 
+.concursotextmob {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
 }
 
 img.atoms {
@@ -696,18 +705,29 @@ img.atoms {
   margin-bottom: 50px;*/
 }
 
+.col-3-c {
+  /* IMPORTANTE */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*margin-top: -100px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;*/
+}
+
 a.animated-button.thar-conc {
+    font-size: 16px;
     color: #ffffff;
     cursor: pointer;
     position: absolute;
     border: 2px solid #5C0877;
     transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #5C0877;
     height: 60px;
-    width: 220px;
+    width: 250px;
     border-radius: 12px;
 }
 
@@ -731,8 +751,8 @@ a.animated-button.thar-conc:before {
     width: 100%;
     z-index: -1;
     content: '';
-    color: #000 !important;
-    background: #5C0877;
+    color: #5C0877 !important;
+    background: transparent;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
@@ -742,7 +762,7 @@ a.animated-button.thar-conc:before {
   width: 100%;
   height: 50px;
   margin-top: 20px;
-  margin-bottom: 180px;
+  margin-bottom: 300px;
 }
 
 
@@ -883,6 +903,7 @@ img.scientiaxmob {
 
 img.ctxmob {
     width: 350px;
+    margin-top: -20px;
 }
 
 
@@ -1433,6 +1454,9 @@ h1.talleres {
 
 
 /*CONCURSO DE PROGRAMACION DESKTOP*/
+.concursomob {
+    display: none;
+}
 
 .concursodesk {
     display: flex;
@@ -1441,8 +1465,11 @@ h1.talleres {
     width: 100%;
 }
 
-.concursomob {
-    display: none;
+
+.imginfo-content {
+    width: 100%;
+    display: inline-flex;
+    /*border: 5px solid #26F4FF;*/
 }
 
 .containerbutton-concurso {
@@ -1450,15 +1477,26 @@ h1.talleres {
 }
 
 .containerimg {
+    width: 100%;
     /*border: 5px solid #26F4FF;*/
 }
 
 .container-concursoinf {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-right: 80px;
+    margin-left: -80px;
     /*border: 5px solid #26F4FF;*/
 }
+
+/*.containerbutton-concurso {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}*/
 
 h2.consulta {
     text-align: center;
@@ -1467,6 +1505,7 @@ h2.consulta {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -100px;
 
 }
 
@@ -1477,12 +1516,18 @@ h2.bases {
     text-transform: uppercase;
     letter-spacing: 4px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.concursotext {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 20px 0 20px;
 }
 
 img.atoms {
     width: 700px;
-    margin-left: -100px;
+    margin-left: 60px;
 }
 
 .bgconcurso {
@@ -1516,17 +1561,16 @@ img.atoms {
 }
 
 a.animated-button.thar-conc {
+    font-size: 16px;
     color: #ffffff;
     cursor: pointer;
     position: absolute;
     border: 2px solid #5C0877;
     transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #5C0877;
     height: 60px;
-    width: 220px;
+    width: 250px;
     border-radius: 12px;
 }
 
@@ -1550,8 +1594,8 @@ a.animated-button.thar-conc:before {
     width: 100%;
     z-index: -1;
     content: '';
-    color: #000 !important;
-    background: #5C0877;
+    color: #5C0877 !important;
+    background: transparent;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
