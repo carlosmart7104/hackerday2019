@@ -555,7 +555,7 @@ td.tallrubik {
 td.tensorflow {
     text-transform: uppercase;
     padding: 8px;
-    font-size: 12px;
+    font-size: 16px;
     border-bottom: 5px solid #26F4FF;
     border-collapse: collapse;   
 }
