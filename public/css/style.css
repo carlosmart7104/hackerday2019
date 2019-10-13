@@ -7,10 +7,10 @@
 body {
   font-family: 'Roboto', 'IBM Plex Sans';
   min-height: 100vh;
-  background: -moz-linear-gradient(0deg, rgba(144,38,91,1) 0%, rgba(29,24,86,1) 35%, rgba(9,10,49,1) 67%);
-background: -webkit-linear-gradient(0deg, rgba(144,38,91,1) 0%, rgba(29,24,86,1) 35%, rgba(9,10,49,1) 67%);
-background: linear-gradient(0deg, rgba(144,38,91,1) 0%, rgba(29,24,86,1) 35%, rgba(9,10,49,1) 67%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#90265b",endColorstr="#090a31",GradientType=1);
+ background: -moz-linear-gradient(0deg, rgba(111,29,70,1) 0%, rgba(29,24,86,1) 50%, rgba(9,10,49,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(111,29,70,1) 0%, rgba(29,24,86,1) 50%, rgba(9,10,49,1) 100%);
+background: linear-gradient(0deg, rgba(111,29,70,1) 0%, rgba(29,24,86,1) 50%, rgba(9,10,49,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6f1d46",endColorstr="#090a31",GradientType=1);
   /*background: -moz-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
   background: linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
@@ -277,7 +277,7 @@ a.animated-button.thar-one:before {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-top: -20px;
+    margin-top: -400px;
 }
 
 /*FOOTER MOBILE*/
@@ -450,7 +450,8 @@ p.confnamep {
 .temach-containermob,
 .codemmunityx-containermob,
 .cis-containermob,
-.hf-containermob {
+.hf-containermob,
+.tech-containermob {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,6 +469,12 @@ img.cismob {
 img.ieeemob,
 img.codemmunityxmob {
     width: 200px;
+}
+
+img.techmob {
+    width: 300px;
+    margin-top: -40px;
+    margin-bottom: 30px;
 }
 
 img.temachmob {
@@ -635,6 +642,110 @@ a.animated-button.thar-tall:before {
 
 
 
+/*CONCURSO DE PROGRAMACION MOBILE*/
+
+.concursodesk {
+    display: none;
+}
+
+.concursomob {
+    display: inline;
+}
+
+h1.concursoname {
+    text-align: center;
+    margin-bottom: 20px;
+    /*border: 10px solid #26F4FF;*/
+}
+
+h2.consultamob {
+    text-align: center;
+    color: #5D388C;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+h2.basesmob {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+img.atoms {
+    width: 100%;
+}
+
+/*BOTON CONCURSO MOBILE*/
+
+.col-3-c {
+  /* IMPORTANTE */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*margin-top: -100px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;*/
+}
+
+a.animated-button.thar-conc {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid #5C0877;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 220px;
+    border-radius: 12px;
+}
+
+a.animated-button.thar-conc:hover {
+    color: #FFFFFF !important;
+    background-color: transparent;
+    text-shadow: none;
+}
+a.animated-button.thar-conc:hover:before {
+    position: absolute;
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-conc:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #5C0877;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.containerbutton-concursomob {
+  /*border: 10px solid #26F4FF;
+  justify-content: flex-start;*/
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 180px;
+}
+
+
 
 
 /*PATROCINADORES MOBILE*/
@@ -741,13 +852,12 @@ h1.locationname {
       }
 /*ORGANIZADORES MOBILE*/
 
-
-/*.orgname-mob {
-    margin: 50px;
-}*/
-
 .orgdesktop {
     display: none;
+}
+
+#organizadores {
+    color: #26F4FF;
 }
 
 .orgcontainer-mob {
@@ -764,6 +874,7 @@ h1.locationname {
     justify-content: center;
     width: 100%;
     height: 100%;
+    margin-top: -20px;
 }
 
 img.scientiaxmob {
@@ -873,7 +984,7 @@ img.ctxmob {
 
     .main-nav {
         display: flex;
-        margin-right: 10px;
+        margin-right: 8px;
         flex-direction: row;
         justify-content: flex-end;
     }
@@ -881,7 +992,7 @@ img.ctxmob {
         margin: 0;
     }
     .nav-links {
-        margin-left: 30px;
+        margin-left: 20px;
         /*pointer-events: none;*/
         cursor: default;
     }
@@ -907,7 +1018,7 @@ img.ctxmob {
     /*BANNER DESKTOP*/
 
     .banner {
-        padding-top: 70px;
+        padding-top: 100px;
     }
 
     .logobanner {
@@ -926,7 +1037,7 @@ img.ctxmob {
     .imglinesgrd {
         /*min-width: 1024px;*/
         width: 100%;
-        margin-top: -400px; 
+        margin-top: -430px; 
         /*display: inline-block;*/
         display: flex;
         z-index: -10;
@@ -1321,6 +1432,147 @@ h1.talleres {
 
 
 
+/*CONCURSO DE PROGRAMACION DESKTOP*/
+
+.concursodesk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.concursomob {
+    display: none;
+}
+
+.containerbutton-concurso {
+    /*border: 5px solid #26F4FF;*/
+}
+
+.containerimg {
+    /*border: 5px solid #26F4FF;*/
+}
+
+.container-concursoinf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 5px solid #26F4FF;*/
+}
+
+h2.consulta {
+    text-align: center;
+    color: #5D388C;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+h2.bases {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+img.atoms {
+    width: 700px;
+    margin-left: -100px;
+}
+
+.bgconcurso {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /*border: 5px solid #26F4FF;*/
+}
+
+.imgbgconcurso {
+    width: 100%;
+    margin-top: -580px; 
+    display: flex;
+    z-index: -10;
+    justify-content: flex-end;
+}
+
+/*BOTON CONCURSO DESKTOP*/
+
+.col-3-c {
+  /* IMPORTANTE */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*margin-top: -100px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;*/
+}
+
+a.animated-button.thar-conc {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid #5C0877;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 220px;
+    border-radius: 12px;
+}
+
+a.animated-button.thar-conc:hover {
+    color: #FFFFFF !important;
+    background-color: transparent;
+    text-shadow: none;
+}
+a.animated-button.thar-conc:hover:before {
+    position: absolute;
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-conc:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #5C0877;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.containerbutton-concurso {
+  /*border: 10px solid #26F4FF;
+  justify-content: flex-start;*/
+  width: 100%;
+  height: 50px;
+  margin-top: -20px;
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
 /*PATROCINADORES DESKTOP*/
 
 /*.patname-mob-container {
@@ -1446,12 +1698,17 @@ h1.aliadosh {
 .codemmunityx-container,
 .temach-container,
 .cis-container,
-.hf-container {
+.hf-container,
+.tech-container {
     display: inline-flex;
     align-items: center;
     /*border: solid 5px #26F4FF;*/
-    margin: 10px;
+    margin: 20px;
 
+}
+
+img.technovation {
+    width: 250px;
 }
 
 img.ieee,
@@ -1476,11 +1733,16 @@ img.cis {
 
 /*ORGANIZADORES DESKTOP*/
 
+
 .orgmob {
     display: none;
 }
 
-.orgname {
+#organizadores {
+    color: #26F4FF;
+}
+
+h1.orgname {
     padding: 1em;
 }
 
