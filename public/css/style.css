@@ -802,7 +802,8 @@ h1.patname-mob {
 .cafe-patmob,
 .itver-container-mob,
 .cg-container-mob,
-.voixty-patmob {
+.voixty-patmob,
+.block-patmob {
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -835,6 +836,10 @@ h1.patname-mob {
 
 .logiety-mob {
     width: 140px;
+}
+
+.block-mob {
+    width: 180px;
 }
 
 
@@ -1651,7 +1656,8 @@ a.animated-button.thar-conc:before {
 .raccoons-container,
 .logiety-container,
 .cafe-container,
-.itver-container {
+.itver-container,
+.block-container {
     display: flex;
     align-items: center;
     margin: 20px;
@@ -1693,6 +1699,10 @@ img.cafe {
 
 img.voixty {
     max-width: 470px;
+}
+
+img.block {
+    max-width: 200px;
 }
 
 
