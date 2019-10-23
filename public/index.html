@@ -17,7 +17,7 @@
 <body>
 <!-- BARRA DE NAVEGACIÓN-->
 	<nav id="myNav" class="navbar navbar-desk transbox transbox-desk">
-	  <span class="navbar-toggle" id="js-navbar-toggle"">
+	  <span class="navbar-toggle" id="js-navbar-toggle">
         <img src="img/menubar.svg" class="menubar">
       </span>
 	  <a href="#" class="logo">
@@ -26,12 +26,13 @@
 	  </a>
       <ul class="main-nav main-nav-desk" id="js-menu">
       	<!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-        <!--<li><a href="#" class="nav-links">Conferencias</a></li>
-        <li><a href="#" class="nav-links">Talleres</a></li>
-        <li><a href="#" class="nav-links">Concurso</a></li>
-        <li><a href="#" class="nav-links">Aliados</a></li>-->
-        <li><a href="#" class="nav-links">Patrocinios</a></li>
-        <li><a href="#" class="nav-links">Ubicación</a></li>
+        <li><a href="#conferencias" class="nav-links">Conferencias</a></li>
+        <li><a href="#talleres" class="nav-links">Talleres</a></li>
+        <li><a href="#concurso" class="nav-links">Concurso</a></li>
+        <li><a href="#organizadores" class="nav-links">Organizadores</a></li>
+        <li><a href="#patrocinadores" class="nav-links">Patrocinios</a></li>
+        <li><a href="#aliados" class="nav-links">Aliados</a></li>
+        <li><a href="#location" class="nav-links">Ubicación</a></li>
         <li><a href="#contact" class="nav-links">Contacto</a></li>
       </ul>     
 	</nav>
@@ -43,10 +44,10 @@
 		<div class="lugaryfecha">
 			<h1 class="ver">VERACRUZ</h1>
 			<h4 class="hora">10:00 - 17:00</h4>
-			<h4 class="institutodesktop">INSTITUTO TECNOLOGICO DE VERACRUZ</h4>
-			<h4 class="instituto">INSTITUTO TECNOLOGICO DE</h4>
+			<strong><h4 class="institutodesktop">INSTITUTO TECNOLÓGICO DE VERACRUZ</h4></strong>
+			<strong><h4 class="instituto">INSTITUTO TECNOLÓGICO DE</h4></strong>
 			<h4 class="ver2"> VERACRUZ</h4>
-			<h4 class="fecha">19 OCTUBRE 2019</h4>
+			<strong><h4 class="fecha">19 OCTUBRE 2019</h4></strong>
 		</div>
 		<div class="col-md-3">
 			<a href="https://hackerday-veracruz.boletia.com/" class="btn btn-sm animated-button thar-one" target="_blank">OBTÉN TUS ENTRADAS</a>
@@ -57,42 +58,20 @@
 		</div>		
 	</div>
 
-<!-- CONFERENCIAS DESKTOP & MOBILE -->
-<!--<div class="confname-container">
-	<h1 class="confname-desktop">CONFERENCIAS</h1>
+<!-- CONFERENCIAS -->
+<div class="confname-container">
+	<h1 class="confname-desktop" id="conferencias">CONFERENCIAS</h1>
 </div>
-<!--<div class="confmobile">
-	<div class="swiper-container-confmob" id="container-confmob">
-	    <div class="swiper-wrapper" id="wrapper-confmob">
-	    	<!-- Slides -->
-	     <!-- <div class="swiper-slide-mob flexbox-confmob" id="slide-confmob">
-	      	<img src="img/ricardo.jpg" class="circle-desk">
-		    	<div class="conf-data-mob">
-					<p class="confnamep"><strong class="carlosric">No todo el Blockchain son cryptomonedas</strong></p>
-					<p>Nombre Conferencista<br>Ocupación</p>
-					<div class="conficons">
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-						</span>
-						<span class="fa-stack conficon">
-							<i class="fa fa-circle fa-stack-2x"></i>
-							<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-pagination-confmob"></div>
-	    </div>
-	</div>
-</div>-->
-<!--<div class="conferencias-desktop">
-	<div class="container-conf">
-		<div class="flexbox-conf" id="slide-conf">
-		<img src="img/ricardo.jpg" class="circle-desk">
-			<div class="conf-data-desk">
-				<p class="confnamep"><strong class="carlosric">No todo el Blockchain son cryptomonedas</strong></p>
-				<p>Carlos Ricardo Ortíz Sordo<br>COO and Co-Founder<br><strong>Logiety</strong></p>
+
+<!-- Slides -->
+<!-- CONFERENCIAS MOBILE -->
+<div class="swiper-slide-mob flexbox-confmob" id="confmob">
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/ricardo.png" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">APPS DESCENTRALIZADAS (DAPP)</strong></p>
+				<p class="confnamep">Carlos Ricardo Ortíz Sordo<br><strong class="empresaconf">LOGIETY</strong><br>COO and Co-Founder<br>12:00 - 13:00 hrs</p>
 				<div class="conficons">
 					<span class="fa-stack conficon">
 						<a href="https://www.facebook.com/ricardo.sordo.3" target="_blank">
@@ -101,17 +80,150 @@
 						</a>
 					</span>
 					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlos-ricardo-ortiz-sordo-92ab234a/">
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/servin.png" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">Videojuegos:<br>Una nueva economía</strong></p>
+				<p class="confnamep">Alberto Servín<br><strong class="empresaconf">EXODO ESTUDIOS</strong><br>Director General<br>11:00 - 12:00 hrs</p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="www.facebook.com/ExodoEstudios" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/miguel.png" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">Mecanismos de Seguridad <br>en Páginas Web</strong></p>
+				<p class="confnamep">Miguel Angel Pérez Cabada<br><strong class="empresaconf2">INSTITUTO TECNOLÓGICO DE VERACRUZ</strong><br>Docente<br>15:00 - 16:00 hrs</p>
+				<!--<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="www.facebook.com/ExodoEstudios" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>-->
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/rodrigo.png" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">Introducción a Patrones de diseño</strong></p>
+				<p class="confnamep">Rodrigo Reynaldo <br>Jácome Sarabia<br>
+				<strong class="empresaconf">Fractal Inside Development</strong><br>Gerente<br>14:00 - 15:00 hrs</p>
+				<!--<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="www.facebook.com/ExodoEstudios" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>-->
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/juan.png" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">El arte de la magia<br>aplicado a la ingeniería social</strong></p>
+				<p class="confnamep">Juan Antonio Amat<br><strong class="empresaconf">Vinculación Raccoons</strong><br>Coordinador<br>16:00 - 17:00 hrs</p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/astroamat" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/antonioamat" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="flexbox-confmob" id="slide-confmob">
+		<div class="container-confmob flexbox-confmob">
+		<img src="img/carlos.png" class="circle-mob">
+			<div class="conf-data-mob">
+				<p class="confnamep"><strong class="carlosric">La ruta<br>del programador</strong></p>
+				<p class="confnamep">Carlos Martínez<br><strong class="empresaconf">Scientiax</strong><br>CTO and Co-Founder<br>13:00 - 14:00 hrs</p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/carlosmartinex" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlosmart7104" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- CONFERENCIAS DESKTOP-->
+<div class="conferencias-desktop">
+	<div class="container-conf">
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/ricardo.png" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">APPS DESCENTRALIZADAS (DAPP)</strong></p>
+				<p class="confnamep">Carlos Ricardo Ortíz Sordo<br><strong class="empresaconf">LOGIETY</strong><br>COO and Co-Founder<br>12:00 - 13:00 hrs</p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/ricardo.sordo.3" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlos-ricardo-ortiz-sordo-92ab234a/">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
 					</span>
 				</div>
 			</div>
 		</div>
 		<div class="flexbox-conf" id="slide-conf">
-		<img src="img/ricardo.jpg" class="circle-desk">
+		<img src="img/servin.png" class="circle-desk">
 			<div class="conf-data-desk">
-				<p class="confnamep"><strong class="carlosric">Videojuegos:<br> una nueva economía</strong></p>
-				<p>Alberto Servín<br>Director General<br><strong>EXODO STUDIOS</strong></p>
+				<p class="confnamep"><strong class="carlosric">Videojuegos:<br>Una nueva economía</strong></p>
+				<p class="confnamep">Alberto Servín<br><strong class="empresaconf">EXODO ESTUDIOS</strong><br>Director General<br>11:00 - 12:00 hrs</p>
 				<div class="conficons">
 					<span class="fa-stack conficon">
 						<a href="www.facebook.com/ExodoEstudios" target="_blank">
@@ -123,120 +235,471 @@
 			</div>
 		</div>
 		<div class="flexbox-conf" id="slide-conf">
-		<img src="img/ricardo.jpg" class="circle-desk">
+		<img src="img/miguel.png" class="circle-desk">
 			<div class="conf-data-desk">
 				<p class="confnamep"><strong class="carlosric">Mecanismos de Seguridad <br>en Páginas Web</strong></p>
-				<p>Miguel Angel Pérez Cabada<br>Docente<br><strong>Instituto Tecnológico de Veracruz</strong></p>
+				<p class="confnamep">Miguel Angel Pérez Cabada<br><strong class="empresaconf2">INSTITUTO TECNOLÓGICO DE VERACRUZ</strong><br>Docente<br>15:00 - 16:00 hrs</p>
+				<!--<div class="conficons">
+					<a href="http://mike79.org/" target="_blank">
+						<span class="fa-stack conficon">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/rodrigo.png" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">Introducción <br> a Patrones de diseño</strong></p>
+				<p class="confnamep">Rodrigo Reynaldo Jácome Sarabia<br>
+				<strong class="empresaconf">Fractal Inside Development</strong><br>Gerente<br>14:00 - 15:00 hrs</p>
+				<!--<div class="conficons">
+					<a>
+						<span class="fa-stack conficon">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+						</span>
+					</a>
+				</div>-->
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/juan.png" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">El arte de la magia<br>aplicado a la ingeniería social</strong></p>
+				<p class="confnamep">Juan Antonio Amat<br><strong class="empresaconf">Vinculación Raccoons</strong><br>Coordinador<br>16:00 - 17:00 hrs</p>
 				<div class="conficons">
 					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/astroamat" target="_blank">
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
 					</span>
 					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/antonioamat" target="_blank">
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="flexbox-conf" id="slide-conf">
+		<img src="img/carlos.png" class="circle-desk">
+			<div class="conf-data-desk">
+				<p class="confnamep"><strong class="carlosric">La ruta<br>del programador</strong></p>
+				<p class="confnamep">Carlos Martínez<br><strong class="empresaconf">Scientiax</strong><br>CTO and Co-Founder<br>13:00 - 14:00 hrs</p>
+				<div class="conficons">
+					<span class="fa-stack conficon">
+						<a href="https://www.facebook.com/carlosmartinex" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+						</a>
+					</span>
+					<span class="fa-stack conficon">
+						<a href="https://www.linkedin.com/in/carlosmart7104" target="_blank">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+						</a>
 					</span>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>-->
+</div>
+
+
 
 <!-- TALLERES -->
-<!--<h1 class="talleres">TALLERES</h1>
+<h1 class="talleres" id="talleres">TALLERES</h1>
 	<div class="tall-container-mob">
-		<div class="tallmob-container">
-		    <table class="talleres-mobile">
+		<div class="flexbox">
+	        <table class="talleres-mobile">
 				<tr>
-					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-					<td></td>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/deeplearning.svg"></td>
+					<td class="iconotall"></td>
 				</tr>
 				<tr>
-					<td class="datavis">Data Visualizatio<br>con React</td>
+					<td class="tensorflow">Introducción al desarrollo del procesamiento natural de imágenes con Tensorflow</td>
 				</tr>
 				<tr>
-					<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
+					<td class="deschor">
+						<p class="desctallsmall">¿Quieres aprender a programar un sistema de Deep Learning capaz de generar imágenes de flores realistas?</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 11:00 a 13:00<br><strong>ZONA 1</strong></p>
+						</div>
+					</td>
 				</tr>
-		    </table>
-		    <div class="col-3 buttontaller">
-				<a href="" class="btn btn-sm animated-button thar-two">REGÍSTRATE</a>
+	    	</table>
+	    	<div class="boton-containermob">
+	    		<div class="col-3-t">
+				<a href="https://forms.gle/xr98Q3oVUvLkpy8D6" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
 			</div>
 		</div>
-	</div> -->
-		<!-- Slider main container -->
-		<!--<div class="swiper-container container-tall talleres-desktop">
-		    <!-- Additional required wrapper -->
-		    <!--<div class="swiper-wrapper wrapper-tall">
-		        <!-- Slides --> 
-		       <!-- <div class="swiper-slide flexbox slide-tall">
-		        	<table class="taller-desktop taller-desktop1">
-						<tr>
-							<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td class="datavis">Data Visualization<br>con React</td>
-						</tr>
-						<tr>
-							<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
-						</tr>
-		    		</table>
-		    		<div class="boton-container">
-		    			<div class="col-3-t buttontallerdesk">
-						<a href="" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+		<div class="flexbox">
+	        <table class="talleres-mobile">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/css.svg"></td>
+					<td class=""></td>
+				</tr>
+				<tr>
+					<td class="tallname">CSS para crear sitios web bellos</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">Si quieres mejorar tus habilidades CSS ¡ESTE TALLER ES PARA TI!</p>
+						<br>
+						<div class="hourcontainer2">
+							<p class="tallhorario">Horario: 11:00 a 13:00<br><strong>ZONA 2</strong></p>
 						</div>
-					</div>
-		        </div>
-		        <div class="swiper-slide flexbox slide-tall">
-		        	<table class="taller-desktop taller-desktop2">
-						<tr>
-							<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td class="datavis">Data Visualization<br>con React</td>
-						</tr>
-						<tr>
-							<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
-						</tr>
-		    		</table>
-		    		<div class="boton-container">
-		    			<div class="col-3-t buttontallerdesk">
-						<a href="" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-containermob">
+	    		<div class="col-3-t buttontallerdesk">
+					<a href="https://forms.gle/oXQjncyZev7W2VxZ6" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+    	</div>
+	    <div class="flexbox">
+	        <table class="talleres-mobile">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/ibm.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">Crea tu propio asistente virtual con IBM Watson</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">Enviar datos de sensores generados en un Smartphone a IBM Watson, crear aplicaciones de Cloud Foundry y crear aplicación Android e instalarla</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 13:00 a 15:00<br><strong>ZONA 1</strong></p>
 						</div>
-					</div>		        
-		        </div>
-		        <div class="swiper-slide flexbox slide-tall">
-		        	<table class="taller-desktop taller-desktop3">
-						<tr>
-							<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/data.svg"></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td class="datavis">Data Visualization<br>con React</td>
-						</tr>
-						<tr>
-							<td class="deschor">Descripción<br><p class="tallhorario">Horario</p></td>
-						</tr>
-		    		</table>
-		    		<div class="boton-container">
-		    			<div class="col-3-t buttontallerdesk">
-						<a href="" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-containermob">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/w3gfCkVbgVdzYNsY9" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="talleres-mobile">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/server.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">From server <br> to serverless</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">Introducir al público qué es serverless de forma sencilla y cuáles son sus ventajas de uso</p>
+						<br>
+						<div class="hourcontainer2">
+							<p class="tallhorario">Horario: 13:00 a 15:00<br><strong>ZONA 2</strong></p>
 						</div>
-					</div>		        	
-		        </div>
-		    </div>
-		    <!-- If we need pagination -->
-		   <!-- <div class="swiper-pagination"></div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-containermob">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/H9rnLbS7VH4Mg7GN7" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="talleres-mobile">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/cloud-computing.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">IoT <br>con Raspberry Pi y Python</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">Sistema de automatización de dispositivos con Python y Raspberry pi 3b+ que nos permitirá controlar dispositivos inteligentes de nuestra casa y posteriormente podamos acceder a él desde cualquier lugar con internet</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 14:30 a 17:00<br><strong>ZONA 1</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-containermob">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/gcBq49hY9nEEzUfE9" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="talleres-mobile">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/rubik.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallrubik">Rubikeando paso a paso</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">Al finalizar el taller, el asistente podrá identificar la importancia de los algoritmos en soluciones computacionales así como su implementación</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 15:00 a 17:00<br><strong>ZONA 2</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-containermob">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/mCzwn5Bf3ckkhFbn7" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	</div>
+<!--TALLERES DESKTOP-->
+	<div class="talleres-desktop">
+		<div class="flexbox">
+	        <table class="taller-desktop taller-desktop1">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/deeplearning.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname1">Introducción al desarrollo del procesamiento natural de imágenes con Tensorflow</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">¿Quieres aprender a programar un sistema de Deep Learning capaz de generar imágenes de flores realistas?</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 11:00 a 13:00<br><strong>ZONA 1</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-container">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/xr98Q3oVUvLkpy8D6" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="taller-desktop taller-desktop1">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/css.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">CSS <br>para crear sitios web bellos</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallmed">Principiantes o programadores que quieran mejorar sus habilidades CSS</p>
+						<br>
+						<div class="hourcontainer2">
+							<p class="tallhorario">Horario: 11:00 a 13:00<br><strong>ZONA 2</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-container">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/oXQjncyZev7W2VxZ6" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="taller-desktop taller-desktop3">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/ibm.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">Crea tu propio asistente virtual <br>con IBM Watson</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">Enviar datos de sensores generados en un Smartphone a IBM Watson, crear aplicaciones de Cloud Foundry y crear aplicación Android e instalarla</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 13:00 a 15:00<br><strong>ZONA 1</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-container">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/w3gfCkVbgVdzYNsY9" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="taller-desktop taller-desktop4">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/server.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">From server <br> to serverless</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallmed">Introducir al público qué es serverless de forma sencilla y cuáles son sus ventajas de uso</p>
+						<br>
+						<div class="hourcontainer2">
+							<p class="tallhorario">Horario: 13:00 a 15:00<br><strong>ZONA 2</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-container">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/H9rnLbS7VH4Mg7GN7" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="taller-desktop taller-desktop4">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/cloud-computing.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">IoT <br>con Raspberry Pi y Python</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallsmall">Sistema de automatización de dispositivos con Python y Raspberry pi 3b+ que nos permitirá controlar dispositivos inteligentes de nuestra casa y posteriormente podamos acceder a él desde cualquier lugar con internet</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 14:30 a 17:00<br><strong>ZONA 1</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-container">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/gcBq49hY9nEEzUfE9" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	    <div class="flexbox">
+	        <table class="taller-desktop taller-desktop4">
+				<tr>
+					<td class="iconotall" rowspan="3"><img class="imgdatamobile" src="img/rubik.svg"></td>
+					<td class="iconotall"></td>
+				</tr>
+				<tr>
+					<td class="tallname">Rubikeando <br>paso a paso</td>
+				</tr>
+				<tr>
+					<td class="deschor">
+						<p class="desctallmed">Al finalizar el taller, el asistente podrá identificar la importancia de los algoritmos en soluciones computacionales así como su implementación</p>
+						<br>
+						<div class="hourcontainer">
+							<p class="tallhorario">Horario: 15:00 a 17:00<br><strong>ZONA 2</strong></p>
+						</div>
+					</td>
+				</tr>
+	    	</table>
+	    	<div class="boton-container">
+	    		<div class="col-3-t buttontallerdesk">
+				<a href="https://forms.gle/mCzwn5Bf3ckkhFbn7" target="_blank" class="btn btn-sm animated-button thar-tall">REGÍSTRATE</a>
+				</div>
+			</div>
+	    </div>
+	</div>
 
-		    <!-- If we need navigation buttons -->
-		  <!--  <img src="img/left-arrow.svg" class="arrowleft swiper-button-prev">
-		    <img src="img/right-arrow.svg" class="arrowleft swiper-button-next">	
+<!-- CONCURSO -->
+<h1 id="concurso" class="concursoname">CONCURSO DE PROGRAMACIÓN</h1>
+<!-- CONCURSO MOBILE-->
+<div class="concursomob">
+	<span class="containerimg">
+		<img src="img/atoms.svg" class="atoms">
+	</span>
+	<div class="container-concursoinf">
+		<div class="containerbutton-concursomob">
+			<h2 class="consultamob"><strong>CONSULTA</strong></h2>
+			<h2 class="basesmob">LAS BASES</h2>
+			<p class="concursotextmob">¿Quieres desarrollar las habilidades más demandadas por las compañías de software en la Industria Tech?
+			<p class="concursotextmob">¡REGÍSTRATE AHORA Y NO TE PIERDAS ESTA OPORTUNIDAD!</p>
+			<div class="col-3-c">
+				<a href="https://bit.ly/2IEKWoI" target="_blank" class="btn btn-sm animated-button thar-conc">REGISTRO</a>
+			</div>
 		</div>
+	</div>
+</div>
+<!-- CONCURSO DESKTOP-->
+<div class="concursodesk">
+	<div class="imginfo-content">
+		<span class="containerimg">
+			<img src="img/atoms.svg" class="atoms">
+		</span>
+		<div class="container-concursoinf">
+			<div class="containerbutton-concurso">
+				<h2 class="consulta"><strong>CONSULTA</strong></h2>
+				<h2 class="bases">LAS BASES</h2>
+				<p class="concursotext">¿Quieres desarrollar las habilidades más demandadas por las compañías de software en la Industria Tech?</p>
+				<p class="concursotext">¡REGÍSTRATE AHORA Y NO TE PIERDAS ESTA OPORTUNIDAD!</p>
+				<div class="col-3-c">
+					<a href="https://bit.ly/2IEKWoI" target="_blank" class="btn btn-sm animated-button thar-conc">REGISTRO</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bgconcurso">
+		<img src="img/linesgrdconc.svg" class="imgbgconcurso">
+	</div>
+</div>
+
+
+<!-- ORGANIZADORES -->
+<h1 id="organizadores" class="orgname orgname-mob">ORGANIZADORES</h1>
+<div class="organizadores">
+	<div class="orgdesktop">
+		<div class="orgimg-container">
+			<div class="ctx-container">
+				<a href="https://www.comunidadtx.com/" target="_blank">
+					<img src="img/ctxbco.png" class="ctx">
+				</a>
+			</div>
+			<div class="scientiax-container">
+				<a target="_blank">
+					<img src="img/scientiaxbco.png" class="scientiax">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="orgmob">
+		<div class="orgcontainer-mob">
+			<div class="ctx-containermob">
+				<a href="https://www.comunidadtx.com/" target="_blank">
+					<img src="img/ctxbco.png" class="ctxmob">
+				</a>
+			</div>
+			<div class="scientiax-containermob">
+				<a target="_blank">
+					<img src="img/scientiaxbco.png" class="scientiaxmob">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 <!-- PATROCINADORES -->
 
-<h1 class="patname-desk">PATROCINADORES</h1>
+<h1 id="patrocinadores" class="patname-desk">PATROCINADORES</h1>
 <div class="patrocinadores">
 	<div class="patdesktop">
 		<div class="patimage-container">
@@ -245,16 +708,60 @@
 					<img src="img/pcdigital.png" class="pcdigital">
 				</a>
 			</div>
+			<div class="exodo-container">
+				<a href="https://www.exodoestudios.com" target="_blank">
+					<img src="img/exodo.png" class="exodo">
+				</a>
+			</div>
+			<div class="itver-container">
+				<a href="http://www.veracruz.tecnm.mx" target="_blank">
+					<img src="img/itver.png" class="itversponsor">
+				</a>
+			</div>
+			<div class="cg-container">
+				<a href="https://www.cg.edu.mx/" target="_blank">
+					<img src="img/cg.png" class="cg">
+				</a>
+			</div>
+		</div>
+		<div class="patimage-container">
+			<div class="voixty-container">
+				<a href="https://voixty.mx/" target="_blank">
+					<img src="img/voixty.png" class="voixty">
+				</a>
+			</div>
+			<div class="cafe-container">
+				<a href="http://www.cafedonjosepaez.com/" target="_blank">
+					<img src="img/cafe.png" class="cafe">
+				</a>
+			</div>
+		</div>
+		<div class="patimage-container">
 			<div class="fractal-container">
 				<a href="http://www.fractalinside.com/" target="_blank">
 					<img src="img/fractal.png" class="fractal">
 				</a>
 			</div>
+			<div class="raccoons-container">
+				<a>
+					<img src="img/raccoons.png" class="raccoons">
+				</a>
+			</div>
+			<div class="logiety-container">
+				<a href="http://www.logiety.com/" target="_blank">
+					<img src="img/logiety.png" class="logiety">
+				</a>
+			</div>
+			<div class="block-container">
+				<a href="http://www.institutoblockchainmexico.com/" target="_blank">
+					<img src="img/block.png" class="block">
+				</a>
+			</div>
 		</div>
 	</div>
-	<div class="patname-mob-container">
-		<h1 class="patname-mob">PATROCINADORES</h1>
-	</div>
+	<!--<div class="patname-mob-container">
+		<h1 id="pat" class="patname-mob">PATROCINADORES</h1>
+	</div>-->
 	<div class="patmob">
 		<div class="patmobimg-container">
 			<div class="pccontainer-mob">
@@ -262,17 +769,115 @@
 					<img src="img/pcdigital.png" class="pcdigital-mob">
 				</a>
 			</div>
+			<div class="exodo-container-mob">
+				<a href="https://www.exodoestudios.com" target="_blank">
+					<img src="img/exodo.png" class="exodo-mob">
+				</a>
+			</div>
+			<div class="itver-container-mob">
+				<a href="http://www.veracruz.tecnm.mx" target="_blank">
+					<img src="img/itver.png" class="itver-mob">
+				</a>
+			</div>
+			<div class="cg-container-mob">
+				<a href="https://www.cg.edu.mx/" target="_blank">
+					<img src="img/cg.png" class="cg-mob">
+				</a>
+			</div>
+
+			<div class="voixty-patmob">
+				<a href="https://voixty.mx/" target="_blank">
+					<img src="img/voixty.png" class="voixty-mob">
+				</a>
+			</div>
+			<div class="cafe-patmob">
+				<a href="http://www.cafedonjosepaez.com/" target="_blank">
+					<img src="img/cafe.png" class="cafe-mob">
+				</a>
+			</div>
+
 			<div class="fractal-container-mob">
 				<a href="http://www.fractalinside.com/" target="_blank">
 					<img src="img/fractal.png" class="fractal-mob">
+				</a>
+			</div>
+			<div class="raccoons-patmob">
+				<a>
+					<img src="img/raccoons.png" class="raccoonsmob">
+				</a>
+			</div>
+			<div class="logiety-patmob">
+				<a href="http://www.logiety.com/" target="_blank">
+					<img src="img/logiety.png" class="logiety-mob">
+				</a>
+			</div>
+			<div class="block-patmob">
+				<a href="http://www.institutoblockchainmexico.com/" target="_blank">
+					<img src="img/block.png" class="block-mob">
 				</a>
 			</div>
 		</div>
 	</div>
 </div>
 
+<!-- ALIADOS -->
+
+<h1 id="aliados" class="aliadosh aliadosh-mob">ALIADOS</h1>
+<div class="aliados">
+	<div class="aliados-mob">
+		<div class="aliadosimg-mob">
+			<div class="hf-containermob">
+				<a><img src="img/hf.png" class="hfmob"></a>
+			</div>
+			<div class="tech-containermob">
+				<a><img src="img/technovation.png" class="techmob"></a>
+			</div>
+			<div class="xalapacode-containermob">
+				<a><img src="img/xalapacode.png" class="xalapacodemob"></a>
+			</div>
+			<div class="ieee-containermob">
+				<a><img src="img/ieee.png" class="ieeemob"></a>
+			</div>
+			<div class="codemmunityx-containermob">
+				<a><img src="img/codemmunityx.png" class="codemmunityxmob"></a>
+			</div>
+			<div class="temach-containermob">
+				<a><img src="img/temach.png" class="temachmob"></a>
+			</div>
+			<div class="cis-containermob">
+				<a><img src="img/cis.png" class="cismob"></a>
+			</div>
+		</div>
+	</div>
+	<div class="aliados-desk">
+		<div class="aliadosimg-container">
+			<div class="hf-container">
+				<a><img src="img/hf.png" class="hf"></a>
+			</div>
+			<div class="tech-container">
+				<a><img src="img/technovation.png" class="technovation"></a>
+			</div>
+			<div class="xalapacode-container">
+				<a><img src="img/xalapacode.png" class="xalapacode"></a>
+			</div>
+			<div class="ieee-container">
+				<a><img src="img/ieee.png" class="ieee"></a>
+			</div>
+			<div class="temach-container">
+				<a><img src="img/temach.png" class="temach"></a>
+			</div>
+			<div class="codemmunityx-container">
+				<a><img src="img/codemmunityx.png" class="codemmunityx"></a>
+			</div>
+			<div class="cis-container">
+				<a><img src="img/cis.png" class="cis"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- UBICACIÓN -->
-<h1 class="locationname">Ubicación</h1>
+<h1 id="location" class="locationname">Ubicación</h1>
 <div class="mapcontainer">
 	<div id="map"></div>
 </div>

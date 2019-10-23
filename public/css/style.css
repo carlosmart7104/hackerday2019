@@ -7,10 +7,14 @@
 body {
   font-family: 'Roboto', 'IBM Plex Sans';
   min-height: 100vh;
-  background: -moz-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
+ background: -moz-linear-gradient(0deg, rgba(111,29,70,1) 0%, rgba(29,24,86,1) 50%, rgba(9,10,49,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(111,29,70,1) 0%, rgba(29,24,86,1) 50%, rgba(9,10,49,1) 100%);
+background: linear-gradient(0deg, rgba(111,29,70,1) 0%, rgba(29,24,86,1) 50%, rgba(9,10,49,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6f1d46",endColorstr="#090a31",GradientType=1);
+  /*background: -moz-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
   background: -webkit-linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
   background: linear-gradient(180deg, rgba(9,10,49,1) 0%, rgba(29,24,86,1) 48%, rgba(232,0,116,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090a31",endColorstr="#e80074",GradientType=1);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090a31",endColorstr="#e80074",GradientType=1);*/
 }
 
 /*menu bar*/
@@ -52,11 +56,13 @@ ul.navbar {
     
 }
 .logoimg {
-    display: inline-block;
+    display: flex;
     width: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
+   /*border: 6px solid #49C9F6;
+   border-radius: 50%;*/
 }
 
 .logoletras {
@@ -218,13 +224,15 @@ a.animated-button.thar-one {
     color: #ffffff;
     cursor: pointer;
     position: absolute;
-    border: 2px solid rgba(232, 0, 116, 0.85);
+    border: 2px solid #E80074;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #E80074;
     height: 60px;
+    width: 250px;
     border-radius: 15px;
 }
 
@@ -249,7 +257,7 @@ a.animated-button.thar-one:before {
     z-index: -1;
     content: '';
     color: #000 !important;
-    background: rgba(232, 0, 116, 0.85);
+    background: transparent;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
@@ -271,10 +279,10 @@ a.animated-button.thar-one:before {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-top: -20px;
+    margin-top: -400px;
 }
 
-/*FOOTER*/
+/*FOOTER MOBILE*/
 
 
 footer {
@@ -334,54 +342,80 @@ span i a {
     padding-top: 2em;
 }
 
-/*CONFERENCIAS*/
+/*CONFERENCIAS MOBILE*/
 
 .conferencias-desktop {
     display: none;
 }
 
-/*h1.confname {
-    color: #26F4FF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}*/
+.flexbox-confmob {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-.nombreconferencia {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
-    margin-bottom: 10px;
+#confmob {
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+}
+
+.container-confmob {
+    margin: 20px;
+}
+
+h1.confname-desktop {
+    color: #26F4FF;
+    margin-top: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .carlosric {
+    color: #26F4FF;
     text-transform: uppercase;
-
 }
 
-
-.Conferencias {
-    padding: 2em;
-}
-
-.circle {
-   border: 5px solid rgba(232, 0, 116, 0.85);
-   align-items: center;
+.circle-mob {
+   justify-content: center;
+   border: 6px solid rgba(232, 0, 116, 0.85);
    width: 150px;
    height: 150px;
    background: #49C9F6;
    border-radius: 50%;
-   margin: 0 auto;
-   margin-top: 20px;
+   margin-bottom: -20px;
    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 }
 
-.conf-data {
+img.circle-mob {
+    padding: 0.2em;
+}
+
+.conf-data-mob {
     margin-top: 20px;
 }
 
-.conf-data p {
+.conf-data-mob p {
     text-align: center;
     color: white;
     font-family: 'Roboto';
     font-size: 20px;
+}
 
+p.confnamep {
+    margin-top: 15px;
+}
+
+.empresaconf {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.empresaconf2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
 }
 
 .conficons {
@@ -395,14 +429,78 @@ span i a {
     color: black;
 }
 
+/*ALIADOS MOBILE*/
+
+
+
+.aliadosh-mob {
+}
+
+.aliados-desk {
+    display: none;
+}
+
+.aliadosimg-mob {
+    display: flex;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+
+.ieee-containermob,
+.xalapacode-containermob,
+.raccoons-containermob,
+.temach-containermob,
+.codemmunityx-containermob,
+.cis-containermob,
+.hf-containermob,
+.tech-containermob {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*border: solid 5px #26F4FF;*/
+
+}
+
+img.xalapacodemob,
+img.temachmob,
+img.cismob {
+    width: 150px;
+}
+
+img.ieeemob,
+img.codemmunityxmob {
+    width: 200px;
+}
+
+img.techmob {
+    width: 300px;
+    margin-top: -40px;
+    margin-bottom: 30px;
+}
+
+img.temachmob {
+    margin: 20px;
+}
+
+img.hfmob {
+    width: 130px;
+    margin-bottom: 50px;
+}
+
+img.raccoonsmob {
+    width: 150px;
+    margin: -20px;
+}
+
+
+
+
 /*TALLERES MOBILE*/
 
 .talleres-desktop {
     display: none;
 }
-
-
-
 
 h1.talleres {
     color: #26F4FF;
@@ -419,15 +517,8 @@ table {
 .talleres-mobile {
     border-radius: 20px;
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
 
-}
-
-td.datavis {
-    padding: 8px;
-    border-bottom: 5px solid #26F4FF;
-    border-collapse: collapse;
-    
 }
 
 td.deschor {
@@ -439,24 +530,65 @@ td.deschor {
 td.iconotall {
     border-right: 5px solid #26F4FF;
     border-collapse: collapse;
+    width: 100px;
 }
 
 p.tallhorario {
     color: #E0274D;
 }
 
-/*BOTON TALLER*/
-.col-3 {
+
+td.tallname {
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 16px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse; 
+}
+
+td.tallrubik {
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 16px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse; 
+}
+
+td.tensorflow {
+    text-transform: uppercase;
+    padding: 8px;
+    font-size: 16px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;   
+}
+
+p.desctallsmall {
+    font-size: 12px;
+}
+
+p.desctallmed2 {
+    font-size: 
+}
+
+
+
+
+
+/*BOTON TALLER MOBILE*/
+
+.col-3-t {
   /* IMPORTANTE */
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  /*margin-top: -100px;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 50px;*/
 }
 
-a.animated-button.thar-two {
+a.animated-button.thar-tall {
     color: #ffffff;
     cursor: pointer;
     position: absolute;
@@ -467,22 +599,22 @@ a.animated-button.thar-two {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 50%;
+    width: 220px;
     border-radius: 12px;
 }
 
-a.animated-button.thar-two:hover {
+a.animated-button.thar-tall:hover {
     color: #FFFFFF !important;
     background-color: transparent;
     text-shadow: none;
 }
-a.animated-button.thar-two:hover:before {
+a.animated-button.thar-tall:hover:before {
     position: absolute;
     bottom: 0%;
     top: auto;
     height: 100%;
 }
-a.animated-button.thar-two:before {
+a.animated-button.thar-tall:before {
     display: block;
     position: absolute;
     left: 0px;
@@ -496,33 +628,153 @@ a.animated-button.thar-two:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
+.boton-containermob {
+  /*border: 10px solid #26F4FF;
+  justify-content: flex-start;*/
+  width: 100%;
+  height: 50px;
+  margin-top: -20px;
+  margin-bottom: 100px;
+}
+
 .imgdatamobile {
     display: inline-block;
     width: 70px;
 }
 
-.talleres-desktop{
+
+
+/*CONCURSO DE PROGRAMACION MOBILE*/
+
+.concursodesk {
     display: none;
 }
+
+.concursomob {
+    display: inline;
+}
+
+h1.concursoname {
+    text-align: center;
+    margin-bottom: 20px;
+    /*border: 10px solid #26F4FF;*/
+}
+
+h2.consultamob {
+    text-align: center;
+    color: #5D388C;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -10px;
+}
+
+h2.basesmob {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.concursotextmob {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+}
+
+img.atoms {
+    width: 100%;
+}
+
+/*BOTON CONCURSO MOBILE*/
+
+.col-3-c {
+  /* IMPORTANTE */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*margin-top: -100px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;*/
+}
+
+a.animated-button.thar-conc {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid #E0274D;
+    transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+a.animated-button.thar-conc:hover {
+    color: #FFFFFF !important;
+    background-color: transparent;
+    text-shadow: none;
+}
+a.animated-button.thar-conc:hover:before {
+    position: absolute;
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-conc:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #E0274D !important;
+    background: #E0274D;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.containerbutton-concursomob {
+  /*border: 10px solid #26F4FF;
+  justify-content: flex-start;*/
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 300px;
+}
+
+
+
 
 /*PATROCINADORES MOBILE*/
 
 .patname-desk {
-    display: none;
+    padding: 1em;
 }
 
 .patdesktop {
     display: none;
 }
 
-.patname-mob-container {
+/*.patname-mob-container {
 
     display: inline;
     margin: 40px;
-}
+}*/
 
 h1.patname-mob {
-    padding: 1em;
+    padding: 0;
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
@@ -532,7 +784,7 @@ h1.patname-mob {
 .patmob {
     display: flex;
     justify-content: center;
-    padding: 1em;
+    padding: 1.6em;
     /*border: 5px solid rgba(232, 0, 116, 0.85);*/
 
 }
@@ -542,21 +794,52 @@ h1.patname-mob {
     flex-direction: column;
 }
 
-.pccontainer-mob {
+.pccontainer-mob,
+.fractal-container-mob,
+.exodo-container-mob,
+.raccoons-patmob,
+.logiety-patmob,
+.cafe-patmob,
+.itver-container-mob,
+.cg-container-mob,
+.voixty-patmob,
+.block-patmob {
     display: flex;
     justify-content: center;
+    margin: 20px;
 }
 
-.pcdigital-mob {
+.itver-mob,
+.cg-mob {
+    width: 230px;
+}
+
+
+.voixty-mob {
+    width: 280px;
+    margin: -50px;
+}
+
+.cafe-mob {
+    width: 180px;
+}
+
+.pcdigital-mob,
+.exodo-mob {
     width: 300px;
-}
-
-.fractal-container-mob {
-
 }
 
 .fractal-mob {
-    width: 300px;
+    width: 230px;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+}
+
+.logiety-mob {
+    width: 140px;
+}
+
+.block-mob {
+    width: 180px;
 }
 
 
@@ -581,6 +864,41 @@ h1.locationname {
         /*border-radius: 10px;*/
         right: 0 auto;
       }
+/*ORGANIZADORES MOBILE*/
+
+.orgdesktop {
+    display: none;
+}
+
+#organizadores {
+    color: #26F4FF;
+}
+
+.orgcontainer-mob {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 50px;
+    /*border: 5px solid rgba(232, 0, 116, 0.85);*/
+}
+
+.ctx-containermob,
+.scientiax-containermob {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+}
+
+img.scientiaxmob {
+    width: 300px;
+}
+
+img.ctxmob {
+    width: 350px;
+    margin-top: -20px;
+}
 
 
 
@@ -681,7 +999,7 @@ h1.locationname {
 
     .main-nav {
         display: flex;
-        margin-right: 30px;
+        margin-right: 8px;
         flex-direction: row;
         justify-content: flex-end;
     }
@@ -689,7 +1007,7 @@ h1.locationname {
         margin: 0;
     }
     .nav-links {
-        margin-left: 40px;
+        margin-left: 20px;
         /*pointer-events: none;*/
         cursor: default;
     }
@@ -701,7 +1019,7 @@ h1.locationname {
     display: inline-block;
     width: 180px;
     margin-top: 5px;
-    margin-left: 0px;
+    margin-left: -20px;
     }
 
    .navbar-toggle {
@@ -715,7 +1033,7 @@ h1.locationname {
     /*BANNER DESKTOP*/
 
     .banner {
-        padding-top: 70px;
+        padding-top: 100px;
     }
 
     .logobanner {
@@ -734,7 +1052,7 @@ h1.locationname {
     .imglinesgrd {
         /*min-width: 1024px;*/
         width: 100%;
-        margin-top: -120px; 
+        margin-top: -430px; 
         /*display: inline-block;*/
         display: flex;
         z-index: -10;
@@ -747,7 +1065,7 @@ h1.locationname {
 
 
 
-    /*FOOTER*/
+    /*FOOTER DESKTOP*/
     .footer_mobile {
         display: none;
         
@@ -857,10 +1175,15 @@ h1.locationname {
 
 /*FLEXBOX & SWIPER CONF DESKTOP */
 
+#confmob {
+    display: none;
+}
+
 .conferencias-desktop {
     display: flex;
     justify-content: center;
 }
+
 
 .confname-container {
     padding: 1em;
@@ -897,17 +1220,13 @@ h1.locationname {
 }
 
 .flexbox-conf {
-    display: flex;
-    flex-wrap: wrap;
-    /*border: solid 5px #26F4FF;*/
-    display: flex;
     justify-content: center; /*alinear horizontal en flex*/
-    flex-wrap: wrap;
 }
 
 
 .circle-desk {
-   border: 5px solid rgba(232, 0, 116, 0.85);
+    justify-content: center;
+   border: 6px solid rgba(232, 0, 116, 0.85);
    width: 150px;
    height: 150px;
    background: #49C9F6;
@@ -918,6 +1237,7 @@ h1.locationname {
 
 .container-conf {
     justify-content: center;
+    flex-wrap: wrap;
     width: 90%;
     height: 100%;
     display: flex;
@@ -936,63 +1256,101 @@ h1.locationname {
     margin: 30px;
     }
 
-span.conficon a i {
+.confimg-container {
+    justify-content: center;
+}
+
+.conficons a { 
     text-decoration: none;
+ }
+
+.conficons a:hover {
+    color: rgba(232, 0, 116, 0.85);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*.conficon a:link {
+    text-decoration: none;
+    pointer-events: none;
+    cursor: default;
+}*/
+
+img.circle-desk {
+    padding: 0.2em;
+    margin-left: 25%;
 }
 
 
 
 
 /*TALLERES-DESKTOP*/
-
-/*FLEXBOX & SWIPER TALLER DESKTOP*/
+    /*FLEXBOX & TALLER DESKTOP*/
 
 .flexbox {
     /*border: solid 5px #26F4FF;*/
-    display: flex;
-    justify-content: space-around; /*alinear horizontal en flex*/
-    flex-wrap: wrap;
+    margin-right: 35px;
+    margin-bottom: 20px;
 
 }
 
-.container-tall {
-    width: 100%;
-    height: 400px;
-}
 
-.confmobile {
-    display: none;
-}
 
 .talleres-desktop{
-    display: inline;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*border: solid 5px #26F4FF;*/
 }
 
-.slide-tall, 
+
 .taller-desktop {
    /* margin-top: 20px;
     border: solid 5px #26F4FF;
     text-align: center;
     color: white;*/
     border-radius: 20px;
-    width: 80%;
+    width: 500px;
+    height: 200px;
     color: white;
     align-items: center; /*alinear verticalmente en flex*/
 }
 
-img.arrowleft {
-    width: 50px;
+td.tallname {
+    text-transform: uppercase;
+    padding: 8px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;
 }
 
+td.tallname1 {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-bottom: 5px solid #26F4FF;
+    border-collapse: collapse;
+    
+}
+
+p.desctallsmall {
+    font-size: 14px;
+}
+
+p.desctallmed {
+    font-size: 16px;
+}
+
+
 td.datavis {
-    padding: 8px;
+    padding: 6px;
     border-bottom: 5px solid #26F4FF;
     border-collapse: collapse;
     
 }
 
 td.deschor {
-    padding: 20px;
+    font-size: 15px;
     border-collapse: collapse;
     
 }
@@ -1004,6 +1362,11 @@ td.iconotall {
 
 p.tallhorario {
     color: #E0274D;
+    padding: 0px;
+}
+
+.hourcontainer2 {
+    padding: 5px;
 }
 
 
@@ -1015,8 +1378,8 @@ p.tallhorario {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: -100px;
-  /*align-items: center;
+  /*margin-top: -100px;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 50px;*/
 }
@@ -1032,7 +1395,7 @@ a.animated-button.thar-tall {
     justify-content: center;
     align-items: center;
     height: 60px;
-    width: 50%;
+    width: 220px;
     border-radius: 12px;
 }
 
@@ -1061,6 +1424,15 @@ a.animated-button.thar-tall:before {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
+.boton-container {
+  /*border: 10px solid #26F4FF;
+  justify-content: flex-start;*/
+  width: 100%;
+  height: 50px;
+  margin-bottom: 80px;
+  margin-top: -20px;
+}
+
 h1.talleres {
     padding: 1em;
 }
@@ -1069,22 +1441,183 @@ h1.talleres {
     display: none;
 }
 
-.buttontaller {
+.boton-containermob {
     display: none;
 }
 
-.boton-container {
+
+
+/*CONCURSO DE PROGRAMACION DESKTOP*/
+.concursomob {
+    display: none;
+}
+
+.concursodesk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.imginfo-content {
+    width: 100%;
+    display: inline-flex;
+    /*border: 5px solid #26F4FF;*/
+}
+
+.containerbutton-concurso {
+    /*border: 5px solid #26F4FF;*/
+}
+
+.containerimg {
+    width: 100%;
+    /*border: 5px solid #26F4FF;*/
+}
+
+.container-concursoinf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 80px;
+    margin-left: -80px;
+    /*border: 5px solid #26F4FF;*/
+}
+
+/*.containerbutton-concurso {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}*/
+
+h2.consulta {
+    text-align: center;
+    color: #5D388C;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -100px;
+
+}
+
+h2.bases {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.concursotext {
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    margin: 10px 20px 0 20px;
+}
+
+img.atoms {
+    width: 700px;
+    margin-left: 60px;
+}
+
+.bgconcurso {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /*border: 5px solid #26F4FF;*/
+}
+
+.imgbgconcurso {
+    width: 100%;
+    margin-top: -580px; 
+    display: flex;
+    z-index: -10;
+    justify-content: flex-end;
+}
+
+/*BOTON CONCURSO DESKTOP*/
+
+.col-3-c {
+  /* IMPORTANTE */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*margin-top: -100px;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 50px;*/
+}
+
+a.animated-button.thar-conc {
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid #E0274D;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+a.animated-button.thar-conc:hover {
+    color: #FFFFFF !important;
+    background-color: transparent;
+    text-shadow: none;
+}
+a.animated-button.thar-conc:hover:before {
+    position: absolute;
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+a.animated-button.thar-conc:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #E0274D;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+
+.containerbutton-concurso {
   /*border: 10px solid #26F4FF;
   justify-content: flex-start;*/
   width: 100%;
   height: 50px;
+  margin-top: -20px;
+  margin-bottom: 100px;
 }
+
+
+
+
+
+
+
+
+
 
 /*PATROCINADORES DESKTOP*/
 
-.patname-mob-container {
+/*.patname-mob-container {
     display: none;
-}
+}*/
 
 .patmob {
     display: none;
@@ -1101,6 +1634,95 @@ h1.talleres {
 }
 
 .patdesktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    border: solid 5px #26F4FF;
+    border-radius: 20px;*/
+}
+
+.patimage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pccontainer,
+.exodo-container,
+.fractal-container,
+.raccoons-container,
+.logiety-container,
+.cafe-container,
+.itver-container,
+.block-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    /*border: solid 5px #26F4FF;*/
+}
+
+.cg-container,
+.voixty-container {
+
+}
+
+
+img.pcdigital,
+img.exodo {
+    max-width: 480px;
+    /*border: solid 5px #26F4FF;*/
+}
+
+img.itversponsor {
+    width: 300px;
+}
+
+img.cg {
+    max-width: 280px;
+}
+
+img.raccoons,
+img.logiety {
+    max-width: 200px;
+}
+
+img.fractal {
+    max-width: 240px;
+}
+
+img.cafe {
+    max-width: 240px;
+}
+
+img.voixty {
+    max-width: 470px;
+}
+
+img.block {
+    max-width: 200px;
+}
+
+
+
+/*ALIADOS DESKTOP*/
+
+.aliados-mob {
+    display: none;
+}
+
+h1.aliadosh {
+    padding: 1em;
+}
+
+.aliados {
+    display: flex;
+    justify-content: center;
+}
+
+.aliados-desk {
     justify-content: center;
     width: 95%;
     height: 100%;
@@ -1109,29 +1731,138 @@ h1.talleres {
     border-radius: 20px;*/
 }
 
-.patimage-container {
-    display: inline-flex;
+.aliadosimg-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.pccontainer {
+.ieee-container,
+.xalapacode-container,
+.codemmunityx-container,
+.temach-container,
+.cis-container,
+.hf-container,
+.tech-container {
     display: inline-flex;
     align-items: center;
     /*border: solid 5px #26F4FF;*/
     margin: 20px;
+
 }
 
-.fractal-container {
-    margin: 20px;
+img.technovation {
+    width: 250px;
 }
 
-img.fractal {
-    max-width: 300px;
+img.ieee,
+img.codemmunityx {
+    max-width: 240px;
 }
 
-img.pcdigital {
-    max-width: 300px;
+img.hf {
+    max-width: 120px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+img.xalapacode {
+    max-width: 140px;
+}
+
+img.temach,
+img.cis {
+    max-width: 130px;
+}
+
+/*ORGANIZADORES DESKTOP*/
+
+
+.orgmob {
+    display: none;
+}
+
+#organizadores {
+    color: #26F4FF;
+}
+
+h1.orgname {
+    padding: 1em;
+}
+
+.organizadores {
+    display: flex;
+    justify-content: center;
+}
+
+.orgdesktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    border: solid 5px #26F4FF;
+    border-radius: 20px;
+}
+
+.ctx-container,
+.scientiax-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 50px;
     /*border: solid 5px #26F4FF;*/
 }
+
+img.scientiax {
+    width: 350px;
+}
+
+img.ctx {
+    width: 400px;
+}
+
+
+
+
+/*ALIADOS DESKTOP*/
+
+.aliadosimg-container {
+    display: inline-flex;
+}
+.orgimg-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctx-container {
+    display: inline-flex;
+    align-items: center;
+    /*border: solid 5px #26F4FF;*/
+    margin: 30px;
+
+}
+
+img.ctx {
+    max-width: 500px;
+}
+
+.scientiax-container {
+    display: inline-flex;
+    align-items: center;
+    /*border: solid 5px #26F4FF;*/
+    margin: 30px;
+
+}
+
+img.scientiax {
+    max-width: 400px;
+}
+
 
 }
 
