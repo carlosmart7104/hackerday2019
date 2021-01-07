@@ -8,7 +8,7 @@ navBarToggle.addEventListener('click', function() {
 })
 
 mapboxgl.accessToken =
-  'pk.eyJ1IjoiY2FybG9zbWFydDcxMDQiLCJhIjoiY2p5b3Z4anp0MTk4azNqbzloZWZpd2R5bCJ9.zY0vP4G4sBCXxsVlKTPDaw'
+  'pk.eyJ1IjoiY2FybG9zbWFydDcxMDQiLCJhIjoiY2tqamxodnVkMDM2dDJ4cnRkazlzc3owbSJ9.ijw5yoc3GTZS5N1E7zHY2w'
 
 const map = new mapboxgl.Map({
   container: 'map',
